@@ -1,0 +1,209 @@
+
+
+@keyframes float {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.Jokers{
+  width: 80%;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(5px 20px 20px rgb(255, 0, 0));
+}
+
+.jokersPng{
+  margin-top: 1.5rem;
+}
+
+
+.logoInv {
+  width: 100%;
+  position: relative;
+}
+
+.logoInv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/LogoBack2.jpg");
+  background-size: cover;
+
+  background-position:center;
+  opacity: 0.7;
+  margin-top: 1.5rem;
+  z-index: -1;
+  mask-image: url("../assets/ink_lv2.gif");
+  mask-size: cover;
+  mask-position: center;
+}
+
+.logoImg {
+  width: 85%;
+  margin-left: 2rem;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(20px 5px 15px black);
+}
+
+.banner-wrapper {
+  margin: 0;
+  position: relative; /* Keeps the curtain in flow */
+}
+.themeDesc{
+  padding: 2rem;
+}
+
+.curtain-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh; /* Pushes next section below */
+  z-index: 2;
+}
+
+.next-section {
+  position: relative;
+  z-index: 1;
+  padding: 5rem 0;
+  background: #f4f4f4;
+}
+
+.curtain-container {
+  position: absolute;
+  min-height: 80vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  box-sizing: border-box;
+  padding: 0 2rem 0 2rem;
+}
+
+
+.curtain {
+  height: 50%;
+  max-width: 40%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transition: transform 3s ease-in-out, opacity 0.5s ease-in-out;
+  
+}
+
+.left-curtain {
+  left: 0;
+  transform: translateX(0);
+}
+
+.right-curtain {
+  right: 0;
+  transform: translateX(0);
+}
+
+.curtain.open {
+  &.left-curtain {
+    transform: translateX(-100%);
+  }
+
+  &.right-curtain {
+    transform: translateX(100%);
+  }
+}
+
+
+.curtain.hidden {
+ display: none;
+  pointer-events: none; 
+}
+
+  .content {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 4s ease-in-out;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .title {
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+  
+    .theme {
+      margin: 0;
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+ 
+  .content.show {
+    opacity: 1;
+  }
+  
+
+
+  @media (min-width: 1020px) {
+    .Jokers {
+      width: 100%; 
+    }
+
+    .jokersPng{
+      width: 150%;
+    }
+    .curtain-container {
+      height: 100vh; 
+      padding: 0 2rem 0 2rem;
+    }
+  
+    .curtain {
+      height: 100%;
+      width: 60%;
+    
+    }
+  
+    .theme {
+      font-size: 1.5em; 
+      text-align: justify;
+      width: 100%;
+    }
+
+    .themeAndObj{
+      display: flex;
+      flex-direction: row;
+      gap: 2.5rem;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .logo{
+      margin-left: 1.5rem;
+    }
+  
+    .logoImg{
+      width: 50%;
+      margin-left: 4rem;
+    }
+   .content{
+    margin-top:2.8rem ;
+   }
+  }
