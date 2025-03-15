@@ -20,9 +20,12 @@ const Navbar = () => {
             </div>
             <ul className={open ? 'nav-links open' : 'nav-links'}>
                 {['Home', 'Rulebook', 'Events', 'Contact', 'Developers'].map((text, index) => (
-                    <li key={index}><a href="#">{text}</a></li>
+                    <li key={index}>
+                    <a href={text === 'Home' ? '/' : `/${text.toLowerCase()}`}>{text}</a>
+                    </li>
                 ))}
             </ul>
+
         </nav>
     );
 };

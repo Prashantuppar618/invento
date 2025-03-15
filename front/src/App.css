@@ -1,27 +1,30 @@
 body, html {
   margin: 0;
+  padding: 0;
   width: 100%;
   background: black;
   color: white;
-  overflow-x: hidden;
   overflow-y: auto;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
-margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .titleCards {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-@media (min-width: 1020px){
-  .container{
-    margin:0;
+@media (min-width: 1020px) {
+  .container {
+    margin-top: 3rem; /* Keep margin to prevent collapse */
   }
 }

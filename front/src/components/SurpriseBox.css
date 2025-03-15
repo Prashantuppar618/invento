@@ -1,0 +1,451 @@
+ /* /* body {
+    background: linear-gradient(135deg, #ffcc00, #ff6699, #ff3300);
+    padding-top: 20px;
+    overflow: hidden;
+    padding-left: 550px;
+} */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    overflow-y: auto;
+  }
+
+.present {
+    width: 410px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    left: 550px;
+}
+
+.box, .lid {
+    background:
+      repeating-linear-gradient(45deg, #ff0000, #ff0000 10px, #ffff00 10px, #ffff00 20px);
+    position: relative;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.box {
+    width: 400px;
+    height: 250px;
+    border: 4px solid #fff;
+}
+
+.lid {
+    width: 400px;
+    height: 70px;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+    z-index: 1;
+    padding: 0 2px;
+    background-color: #ff0000;
+    border: 4px solid #fff;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+    transition: 
+      top ease-out 0.5s,
+      left ease-out 0.5s,
+      transform ease-out 0.5s;
+}
+
+.box span, .lid span {
+    position: absolute;
+    display: block;
+    background: rgba(255, 215, 0, 0.9);
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.box span:first-child {
+    width: 100%;
+    height: 60px;
+    top: 80px;
+}
+
+.box span:last-child, .lid span {
+    width: 60px;
+    height: 100%;
+    left: 170px;
+}
+
+.lid span {
+    left: 172px;
+}
+
+.promo {
+    font-size: 30px;
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    position: relative;
+    height: 0;
+    top: 10px;
+    transition: all ease-out 0.7s;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.promo p {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.promo h2 {
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.present:hover .lid {
+    top: 90px;
+    transform: rotateZ(80deg);
+    left: 250px;
+}
+
+.present:hover .promo {
+    top: -100px;
+}
+
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes popOut {
+    0% { transform: translateY(50px) scale(0); opacity: 0; }
+    50% { transform: translateY(-20px) scale(1.1); opacity: 1; }
+    100% { transform: translateY(0px) scale(1); opacity: 1; }
+}
+
+.present {
+    animation: floating 3s ease-in-out infinite;
+}
+
+.present:hover .box {
+    animation: shake 0.5s ease-in-out;
+}
+
+.carnival-item {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.present:hover .carnival-item {
+    animation: popOut 0.5s ease-out forwards;
+}
+
+.balloon {
+    background: radial-gradient(circle, #ff66b2, #ff3399);
+    border-radius: 50%;
+    top: -100px;
+    left: 50px;
+}
+
+.confetti {
+    background: linear-gradient(45deg, #ffcc00, #ff6699);
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    top: -80px;
+    left: 150px;
+}
+
+.streamer {
+    background: linear-gradient(90deg, #ff3300, #ffff00);
+    width: 5px;
+    height: 50px;
+    border-radius: 5px;
+    top: -120px;
+    left: 250px;
+} */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    overflow-y: auto;
+}
+
+.surprise-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 100vmax;
+    height: 100vh;
+    position: relative;
+}
+
+.present {
+    width: 410px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Ensures inner elements stay centered */
+}
+
+/* Lid and Box: Fully Yellow */
+.box, .lid {
+    background-color: yellow; /* Fully yellow box and lid */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Box */
+.box {
+    width: 400px;
+    height: 250px;
+    border: 4px solid #fff;
+    position: relative;
+    transition: transform 0.5s ease-out;
+    background-color: yellow; /* Box is fully yellow */
+}
+
+/* Text Styling */
+.box-text {
+    position: absolute;
+    top: 47%; /* Slightly above 50% to avoid overlap */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    z-index: 4; /* Highest z-index to ensure visibility */
+    background-color: yellow; /* Matches box background */
+    padding: 5px 10px; /* Adds padding so text is readable */
+}
+
+/* Hide text on hover */
+.present:hover .box span:first-child {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.present:hover .box,
+.present:hover .lid {
+    opacity: 0; /* Makes them transparent */
+    visibility: hidden; /* Removes them from interaction */
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+
+/* Red Plus Sign Stripes on Box */
+.box::before,
+.box::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+
+/* Vertical Stripe */
+.box::before {
+    width: 50px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Horizontal Stripe */
+.box::after {
+    width: 100%;
+    height: 50px;
+    top: 48%; /* Moves stripe slightly below center */
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* Lid */
+.lid {
+    width: 400px;
+    height: 70px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    background-color: #ffff00; /* Same as box */
+    border: 4px solid #fff;
+    border-bottom: none;
+    transition: top ease-out 0.5s, transform ease-out 0.5s;
+}
+
+/* Make Lid Continue Vertical Stripe */
+.lid::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* PDF Viewer */
+.pdf-container {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.3s ease-out;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle frosted border */
+}
+
+/* Show effect on hover */
+.present:hover .pdf-container {
+    opacity: 1;
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+
+/* .pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.pdf-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.present:hover .pdf-container::before {
+    opacity: 1;
+}
+
+
+.download-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(255, 118, 136, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.download-btn:hover {
+    box-shadow: 0px 6px 15px rgba(255, 118, 136, 0.7);
+} */
+
+
+.pdf-container {
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.download-btn {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(255, 118, 136, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects */
+.present:hover .lid {
+    transform: translateY(-70px) rotateZ(-20deg); /* Moves higher */
+    margin-left: -100px;
+}
+
+.present:hover .box {
+    transform: translateY(220px);
+}
+
+.present:hover .pdf-container {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Additional floating animation */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.present {
+    animation: floating 3s ease-in-out infinite;
+}
+
+
+.fullscreen-lottie {
+    position: fixed; /* Cover the entire screen */
+    top: -100px;
+    right: -550px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1); /* Optional: Semi-transparent background effect */
+    z-index: 9999; /* Ensure it's on top of everything */
+    pointer-events: none; /* Allows interaction with elements below */
+}
+
+
+

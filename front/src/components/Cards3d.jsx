@@ -1,16 +1,24 @@
 import { useState } from 'react';
 import './Cards3d.css';
+import { useNavigate } from 'react-router-dom';
 
-const Card3DRotation = ({ frontTitle, frontText, backTitle, backText, frontImage, backImage }) => {
-  const [rotated, setRotated] = useState(false);
+const Card3DRotation = ({ frontTitle, frontText, backTitle, backText, frontImage, backImage,link }) => {
+  const [clickCount, setClickCount] = useState(0);
+  const navigate = useNavigate();
 
-  const handleRotate = () => setRotated(!rotated);
+  const handleClick = () => {
+    if (clickCount === 0) {
+      setClickCount(1); // First click rotates the card
+    } else {
+      navigate(link); // Second click navigates to the new page
+    }
+  };
 
   return (
     <div className="body3d">
       <div className="cards-wrapper">
         <div className="card-container">
-          <div className={`card ${rotated ? 'rotated' : ''}`} onClick={handleRotate}>
+          <div className={`card ${clickCount === 1 ? "rotated" : ""}`} onClick={handleClick}>
             <div
               className="card-contents card-front"
               style={{ backgroundImage: `url(${frontImage})` }}
