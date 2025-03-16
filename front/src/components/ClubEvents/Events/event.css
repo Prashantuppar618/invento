@@ -33,9 +33,6 @@
     }
 }
 
-
-
-
 /* ============================
    Firework Base Styles
    ============================ */
@@ -272,126 +269,157 @@
 /* ============================
    Event Info Section
    ============================ */
-   .event-info {
+   /* Apply a glassmorphism effect */
+.event-info {
     position: relative;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 15px;
+    /* background: rgba(255, 255, 255, 0.15); */
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
     color: white;
     max-width: 80%;
-    width: 600px; /* Ensure a fixed width */
+    width: 600px;
     min-height: 700px;
     text-align: center;
     z-index: 2;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-
-    /* Centering */
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.event-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(255, 255, 255, 0.3);
+}
 
-/* Apply scrollable text inside without showing scrollbar */
+/* Smooth scrolling for event content */
 .event-content {
-    max-height: 550px; /* Set a limit for scrolling */
+    max-height: 550px;
     overflow-y: auto;
-    padding-right: 10px; /* Prevent text from touching scrollbar */
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+    padding-right: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
 }
 
-/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 .event-content::-webkit-scrollbar {
-    display: none;
+    width: 6px;
 }
 
+.event-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+/* Animated title */
 .event-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, #ff6f61, #ffcc70);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-in-out;
 }
 
+/* Event description with glowing effect */
 .event-description {
     font-size: 1.3rem;
     color: #ffffff;
     text-align: center;
     max-width: 90%;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-left: 4px solid #ff6f61;
     border-right: 4px solid #ffcc70;
     border-radius: 10px;
     line-height: 1.8;
     font-style: italic;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-
-
+/* Schedule List */
 .event-schedule h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #ffcc00;
 }
 
 .event-schedule ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 .event-schedule ul li {
     font-size: 1rem;
     margin-bottom: 5px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
 }
 
-/*              */
-
-.event-moreinfo {
-    margin-bottom: -20px; /* Adds space below "See More" button */
-}
-
-
+/* See More & Register Buttons */
 .see-more-btn, .register-btn {
-    padding: 12px 30px; /* Keeps buttons comfortable in size */
+    padding: 14px 35px;
     font-size: 16px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-    transition: background 0.3s;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
 }
-  
-  .see-more-btn {
-    background-color: #007bff;
+
+.see-more-btn {
+    background: linear-gradient(90deg, #007bff, #0056b3);
     color: white;
-  }
-  
-  .see-more-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .more-text {
+}
+
+.see-more-btn:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.register-btn {
+    background: linear-gradient(90deg, #28a745, #1e7e34);
+    color: white;
+}
+
+.register-btn:hover {
+    background: linear-gradient(90deg, #1e7e34, #28a745);
+    box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* More info expansion */
+.more-text {
     text-align: left;
     margin-top: 10px;
     padding: 15px;
     border-radius: 10px;
-    max-height: 0;  /* Initially hidden */
+    max-height: 0;
     opacity: 0;
-    overflow: hidden; /* Prevents content from spilling out */
+    overflow: hidden;
     transform: translateY(-10px);
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-/* When active, reveal content smoothly */
 .more-text.show {
-    max-height: 600px;  /* Adjust as needed */
+    max-height: 600px;
     opacity: 1;
     transform: translateY(0);
 }
 
-
+/* More info heading */
 .more-text h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #ffcc00;
     margin-bottom: 8px;
 }
@@ -409,24 +437,41 @@
     margin-bottom: 5px;
 }
 
-  
-  .register-btn {
-    background-color: #28a745;
-    color: white;
-  }
-  
-  .register-btn:hover {
-    background-color: #1e7e34;
-  }
-  
-
-/* ============================
-   Letter Animations
-   ============================ */
+/* Text animations */
 .letter {
     display: inline-block;
-    opacity: 1; /* Ensure text is visible */
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.3s ease-in-out forwards;
 }
+
+.letter:nth-child(1) { animation-delay: 0.05s; }
+.letter:nth-child(2) { animation-delay: 0.1s; }
+.letter:nth-child(3) { animation-delay: 0.15s; }
+.letter:nth-child(4) { animation-delay: 0.2s; }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 

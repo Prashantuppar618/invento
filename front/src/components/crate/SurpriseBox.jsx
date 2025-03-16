@@ -46,16 +46,14 @@ const SurpriseBox = () => {
           <span></span>
         </div>
 
+        
+      </div>
+
         {showAnimation && (
-          <div className="fullscreen-lottie">
-            <DotLottieReact 
-              src="https://lottie.host/4610658f-4e8e-42ec-ad8c-1ed56d91979a/RN7nmJLKUf.lottie"
-              loop 
-              autoplay
-            />
+          <div className="fullscreen-gif">
+             <img src="/celebrations.gif" alt="Celebration Animation" />
           </div>
         )}
-      </div>
     </div>
   );
 };

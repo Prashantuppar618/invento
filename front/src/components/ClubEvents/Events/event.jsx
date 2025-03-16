@@ -50,6 +50,7 @@ function EventPage({ event }) {
       }}
     >
       <Firework />
+      
 
       <div className="event-info">
         <h1 className="event-title">{event.title}</h1>

@@ -433,18 +433,24 @@ body {
 }
 
 
-.fullscreen-lottie {
-    position: fixed; /* Cover the entire screen */
-    top: -100px;
-    right: -550px;
+.fullscreen-gif {
+    position: fixed; /* Ensure it covers the whole screen */
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.1); /* Optional: Semi-transparent background effect */
+    background: rgba(0, 0, 0, 0.2); /* Optional: Slight overlay effect */
     z-index: 9999; /* Ensure it's on top of everything */
-    pointer-events: none; /* Allows interaction with elements below */
+    pointer-events: none; /* Allow interaction with elements below */
+}
+
+.fullscreen-gif img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensure the GIF scales properly */
 }
 
 
