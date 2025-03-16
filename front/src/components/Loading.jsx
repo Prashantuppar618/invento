@@ -1,4 +1,4 @@
-import Load from "../assets/juggling.gif"
+import Load from "/juggling.gif"
 import "./Loading.css";
 
 const Loading = () => (
