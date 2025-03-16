@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
-import leftCurtain from "../assets/left-curtain.png";
-import rightCurtain from "../assets/right-curtain.png";
 import Jokers from "../assets/Joker.png";
 import Logo from "../assets/Logo.png";
 import "../components/Banner.css";
@@ -11,10 +9,7 @@ const Banner = () => {
     const tl = gsap.timeline();
 
     // Curtain opening animation
-    tl.to(".left-curtain", { x: "-100%", duration: 2, ease: "power3.inOut" }, 0)
-      .to(".right-curtain", { x: "100%", duration: 2, ease: "power3.inOut" }, 0)
-      .to(".content", { opacity: 1, duration: 1, ease: "power2.inOut" }, "-=1")
-      .set([".left-curtain", ".right-curtain"], { display: "none" }, "+=2");
+    tl.to(".content", { opacity: 1, duration: 1, ease: "power2.inOut" }, "-=1");
 
     return () => tl.kill();
   }, []);
@@ -22,12 +17,12 @@ const Banner = () => {
   return (
 
     <div className="banner-wrapper">
-      <div className="curtain-container">
-        <img src={leftCurtain} alt="Left Curtain" className="curtain left-curtain" />
-        <img src={rightCurtain} alt="Right Curtain" className="curtain right-curtain" />
-      </div>
+
       <div className="content">
         <div className="logoInv">
+          <video autoPlay loop muted className="vidBack">
+            <source src="src\assets\CarnivalBack2.mp4" type="video/mp4" />
+          </video>
           <img src={Logo} className="logoImg" alt="Invento_Logo" />
         </div>
         <div className="themeAndObj">

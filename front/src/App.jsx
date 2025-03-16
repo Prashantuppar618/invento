@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import Card3DRotation from './components/Cards3d';
 import Navbar from './components/Navbar';
 import Ballpit from './components/Ballpit';
+import Loading from "./components/Loading"
 
 // Import assets
 import MediaImg from './assets/Media_2.jpg';
@@ -34,6 +35,15 @@ import LiteraryClub from "./components/ClubEvents/Literary/LiteraryClub";
 
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000); // Simulate loading delay
+  }, []);
+
+  if (loading) return <Loading />;
+
   return (
     <Router>
       <Navbar />
