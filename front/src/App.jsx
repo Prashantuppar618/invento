@@ -18,8 +18,8 @@ import lit from './assets/Literary.jpg';
 
 // Import Pages
 
-import Rulebook from "./components/SurpriseBox";
-// import Events from "./pages/Events";
+import Rulebook from "./components/crate/SurpriseBox.jsx";
+import Map from "./components/Map/Map.jsx";
 // import Contact from "./pages/Contact";
 // import Developers from "./pages/Developers";
 
@@ -1037,8 +1037,8 @@ function App() {
 
         {/* Other Pages */}
         <Route path="/rulebook" element={<Rulebook />} />
-        {/* <Route path="/events" element={<Events />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/map" element={<Map />} />
+        {/* <Route path="/contact" element={<Contact />} />
         <Route path="/developers" element={<Developers />} /> */}
 
         <Route path="/media-club" element={<MediaClub />} />

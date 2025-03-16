@@ -55,7 +55,7 @@ const PlayingCards = () => {
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
         >
-          <img src={`/cards/${image}`} alt={`Card ${image}`} />
+          <img src={`/WEC/${image}`} alt={`Card ${image}`} />
         </div>
       ))}
       {isHovered && (

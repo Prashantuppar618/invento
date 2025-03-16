@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import Crosshair from "./Crosshair";
+import Crosshair from "../Crosshair";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import "./SurpriseBox.css";
 

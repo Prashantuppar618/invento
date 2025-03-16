@@ -19,8 +19,8 @@ const eventLinks = {
   "5.png": "/CommunityDevelopment-events/Fight-Of-Carnival-Rivals",
   "4.png": "/community-development-club",
   "3.png": "/community-development-club",
-  "2.png": "/community-development-club",
-  "1.png": "/CommunityDevelopment-events/Carnival-Fest",
+  "2.png": "/CommunityDevelopment-events/Carnival-Fest",
+  "1.png": "/community-development-club",
 };
 
 const PlayingCards = () => {
@@ -55,7 +55,7 @@ const PlayingCards = () => {
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
         >
-          <img src={`/cards/${image}`} alt={`Card ${image}`} />
+          <img src={`/CDC/${image}`} alt={`Card ${image}`} />
         </div>
       ))}
       {isHovered && (
