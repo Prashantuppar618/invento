@@ -301,6 +301,7 @@
     overflow-y: auto;
     padding-right: 10px;
     scrollbar-width: thin;
+    color:white;
     scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
 }
 
@@ -319,9 +320,7 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
-    background: linear-gradient(45deg, #ff6f61, #ffcc70);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(255, 189, 47);
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -440,10 +439,15 @@
 /* Text animations */
 .letter {
     display: inline-block;
+    opacity: 0;
     transform: translateY(10px);
+    animation: fadeInUp 0.3s ease-in-out forwards;
 }
 
-
+.letter:nth-child(1) { animation-delay: 0.05s; }
+.letter:nth-child(2) { animation-delay: 0.1s; }
+.letter:nth-child(3) { animation-delay: 0.15s; }
+.letter:nth-child(4) { animation-delay: 0.2s; }
 
 @keyframes fadeIn {
     from {

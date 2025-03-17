@@ -67,14 +67,14 @@ function App() {
     amount: 0,
     teamSize: "4",
     rules: [
-      "• There will be a total of 6 rounds.",
-      "• The coordinators will provide detailed rules for each round on the spot before the commencement of that specific round. A demo will also be shown.",
-      "• All rounds from the start will follow an elimination format.",
-      "• The use of mobile phones is strictly prohibited throughout the event.",
-      "• Participants are required to keep and preserve any materials provided by the coordinators.",
-      "• All participants must be present at the venue at least 30 minutes before the event begins.",
-      "• Multiple teams from the same college are welcome and encouraged to join.",
-      "• The decisions made by the coordinators are final.",
+      " There will be a total of 6 rounds.",
+      " The coordinators will provide detailed rules for each round on the spot before the commencement of that specific round. A demo will also be shown.",
+      " All rounds from the start will follow an elimination format.",
+      " The use of mobile phones is strictly prohibited throughout the event.",
+      " Participants are required to keep and preserve any materials provided by the coordinators.",
+      " All participants must be present at the venue at least 30 minutes before the event begins.",
+      " Multiple teams from the same college are welcome and encouraged to join.",
+      " The decisions made by the coordinators are final.",
     ],
     dateTime: "3rd April, 10:00 AM",
     venue: "Portico",
@@ -94,19 +94,19 @@ function App() {
     teamSize: "4",
     rules: [
       "**Qualification:**",
-      "• 2 matches will be played (Maps: Erangel and Miramar).",
+      " 2 matches will be played (Maps: Erangel and Miramar).",
   
       "**Finals:**",
-      "• A total of 3 matches will be played.",
-      "• The first two maps will be Erangel and Miramar.",
-      "• The third map will be chosen based on voting (Erangel, Miramar, or Vikendi).",
+      " A total of 3 matches will be played.",
+      " The first two maps will be Erangel and Miramar.",
+      " The third map will be chosen based on voting (Erangel, Miramar, or Vikendi).",
       
       "**General Rules:**",
-      "• Earphones are compulsory.",
-      "• Only smartphones are allowed; no tablets, emulators, or additional gaming devices.",
-      "• No substitute players are allowed.",
-      "• If any team is caught cheating, they will be immediately disqualified.",
-      "• The team with the maximum number of points at the end of all matches will be declared the winner."
+      " Earphones are compulsory.",
+      " Only smartphones are allowed; no tablets, emulators, or additional gaming devices.",
+      " No substitute players are allowed.",
+      " If any team is caught cheating, they will be immediately disqualified.",
+      " The team with the maximum number of points at the end of all matches will be declared the winner."
     ],
     dateTime: "3rd April, 10:00 AM",
     venue: "CS Department Classroom",
@@ -125,26 +125,26 @@ function App() {
     amount: 0,
     teamSize: "5 (plus 1 substitute)",
     rules: [
-      "• It will be a knockout tournament.",
-      "• Players should carry their own setup: laptops, keyboards, headsets, mouse pad, and mouse.",
-      "• Each team's roster will be allowed to have 5 main players and 1 substitute.",
-      "• College identity cards are compulsory.",
-      "• Once the tournament starts, you cannot replace any player.",
-      "• A substitute player may only be added before the game starts.",
-      "• The substitute player cannot be part of any other team's roster in the tournament.",
-      "• Matches will be played in a 5v5 format.",
-      "• Maps will be decided based on a voting system.",
-      "• All matches will be 'Best of One' in a single-elimination bracket (Knockout Tournament).",
-      "• Only one cross-entry college player is allowed per team. This player will not earn GC points for their college; GC points will be awarded to the other 5 members of the team.",
-      "• Team leader (only 1 member per team) must provide a WhatsApp number during registration to be added to the tournament group for further updates.",
-      "• The Coordinator's decision is final.",
+      " It will be a knockout tournament.",
+      " Players should carry their own setup: laptops, keyboards, headsets, mouse pad, and mouse.",
+      " Each team's roster will be allowed to have 5 main players and 1 substitute.",
+      " College identity cards are compulsory.",
+      " Once the tournament starts, you cannot replace any player.",
+      " A substitute player may only be added before the game starts.",
+      " The substitute player cannot be part of any other team's roster in the tournament.",
+      " Matches will be played in a 5v5 format.",
+      " Maps will be decided based on a voting system.",
+      " All matches will be 'Best of One' in a single-elimination bracket (Knockout Tournament).",
+      " Only one cross-entry college player is allowed per team. This player will not earn GC points for their college; GC points will be awarded to the other 5 members of the team.",
+      " Team leader (only 1 member per team) must provide a WhatsApp number during registration to be added to the tournament group for further updates.",
+      " The Coordinator's decision is final.",
   
       "**In-Game Custom Options:**",
-      "• Map: To be played from the map pool based on voting.",
-      "• Mode: Standard.",
-      "• Allow Cheats: Off.",
-      "• Tournament Mode: On.",
-      "• Overtime: Win by Two: On."
+      " Map: To be played from the map pool based on voting.",
+      " Mode: Standard.",
+      " Allow Cheats: Off.",
+      " Tournament Mode: On.",
+      " Overtime: Win by Two: On."
     ],
     dateTime: "3rd April, 9:00 AM",
     venue: "CS Lab",
@@ -165,26 +165,26 @@ function App() {
     amount: 0,
     teamSize: "1",
     rules: [
-      "• Tracks must be submitted in pen drives (strictly in MP3 format) in ready-to-play condition.",
-      "• Classical routines are not allowed.",
-      "• Dance must be performed on western songs, though fusion performances are allowed.",
-      "• Stage cleanliness and discipline should be maintained.",
-      "• Participants must report on time; failure to do so will result in disqualification."
+      " Tracks must be submitted in pen drives (strictly in MP3 format) in ready-to-play condition.",
+      " Classical routines are not allowed.",
+      " Dance must be performed on western songs, though fusion performances are allowed.",
+      " Stage cleanliness and discipline should be maintained.",
+      " Participants must report on time; failure to do so will result in disqualification."
     ],
     rounds: [
       {
         name: "Screening",
         details: [
-          "• Time limit: 1-2 minutes.",
-          "• The elimination round will be held in a closed room."
+          " Time limit: 1-2 minutes.",
+          " The elimination round will be held in a closed room."
         ]
       },
       {
         name: "Final Battle",
         details: [
-          "• This is an on-the-spot face-off round.",
-          "• Participants will get 25-30 seconds to showcase their best dance moves to randomly played music.",
-          "• The decision of the judges will be final and binding."
+          " This is an on-the-spot face-off round.",
+          " Participants will get 25-30 seconds to showcase their best dance moves to randomly played music.",
+          " The decision of the judges will be final and binding."
         ]
       }
     ],
@@ -205,18 +205,18 @@ function App() {
     amount: 0,
     teamSize: "1",
     rules: [
-      "• Time limit: 3-5 minutes.",
-      "• Tracks must be submitted in pen drives (strictly in MP3 format) in ready-to-play condition.",
-      "• Only classical routines and music are allowed.",
-      "• Stage cleanliness and discipline should be maintained.",
-      "• Participants must report on time; failure to do so will result in disqualification."
+      " Time limit: 3-5 minutes.",
+      " Tracks must be submitted in pen drives (strictly in MP3 format) in ready-to-play condition.",
+      " Only classical routines and music are allowed.",
+      " Stage cleanliness and discipline should be maintained.",
+      " Participants must report on time; failure to do so will result in disqualification."
     ],
     rounds: [
       {
         name: "Main Performance",
         details: [
-          "• Single round of classical dance performance.",
-          "• Judging will be based on technique, expressions, rhythm, and adherence to classical style."
+          " Single round of classical dance performance.",
+          " Judging will be based on technique, expressions, rhythm, and adherence to classical style."
         ]
       }
     ],
@@ -237,26 +237,26 @@ function App() {
     amount: 0,
     teamSize: "2",
     rules: [
-      "• Tracks must be submitted in pen drives (strictly in MP3 format) in ready-to-play condition.",
-      "• Classical routines are not allowed. However, fusion performances are allowed.",
-      "• No extra marks will be allocated for the use of props.",
-      "• Stage cleanliness and discipline should be maintained.",
-      "• Participants must report on time; failure to do so will result in disqualification."
+      " Tracks must be submitted in pen drives (strictly in MP3 format) in ready-to-play condition.",
+      " Classical routines are not allowed. However, fusion performances are allowed.",
+      " No extra marks will be allocated for the use of props.",
+      " Stage cleanliness and discipline should be maintained.",
+      " Participants must report on time; failure to do so will result in disqualification."
     ],
     rounds: [
       {
         name: "Screening",
         details: [
-          "• Time limit: 2-3 minutes.",
-          "• The elimination round will be held in a closed room."
+          " Time limit: 2-3 minutes.",
+          " The elimination round will be held in a closed room."
         ]
       },
       {
         name: "Finals",
         details: [
-          "• Time limit: 3-5 minutes.",
-          "• The performance must include the sequence performed in the elimination round.",
-          "• The decision of the judges will be final and binding."
+          " Time limit: 3-5 minutes.",
+          " The performance must include the sequence performed in the elimination round.",
+          " The decision of the judges will be final and binding."
         ]
       }
     ],
@@ -277,22 +277,22 @@ function App() {
     amount: 0,
     teamSize: "8-12",
     rules: [
-      "• Time limit: 5-7 minutes (including stage setup).",
-      "• Tracks must be submitted in pen drives (strictly in MP3 format) in ready-to-play condition.",
-      "• Teams comprising participants from different colleges will not be considered and will be disqualified.",
-      "• A minimum of 6 dancers must always be present on stage during the performance.",
-      "• Fusion is allowed.",
-      "• Usage of props is allowed but must be notified and approved by the coordinators in advance.",
-      "• Stage cleanliness and discipline should be maintained.",
-      "• Participants must report on time; failure to do so will result in disqualification."
+      " Time limit: 5-7 minutes (including stage setup).",
+      " Tracks must be submitted in pen drives (strictly in MP3 format) in ready-to-play condition.",
+      " Teams comprising participants from different colleges will not be considered and will be disqualified.",
+      " A minimum of 6 dancers must always be present on stage during the performance.",
+      " Fusion is allowed.",
+      " Usage of props is allowed but must be notified and approved by the coordinators in advance.",
+      " Stage cleanliness and discipline should be maintained.",
+      " Participants must report on time; failure to do so will result in disqualification."
     ],
     rounds: [
       {
         name: "Final Performance",
         details: [
-          "• One round of performance.",
-          "• Teams will be judged based on synchronization, expression, energy, and creativity.",
-          "• The decision of the judges will be final and binding."
+          " One round of performance.",
+          " Teams will be judged based on synchronization, expression, energy, and creativity.",
+          " The decision of the judges will be final and binding."
         ]
       }
     ],
@@ -316,28 +316,28 @@ function App() {
     amount: 0,
     teamSize: "1",
     rules: [
-      "• Only the assigned code names of participants must be announced.",
-      "• The competition is strictly limited to Indian languages.",
-      "• No vulgarity or profanity will be entertained.",
-      "• Exceeding the time limit will result in a 5% mark deduction per minute.",
-      "• Technical requirements must be communicated to the coordinators in advance.",
-      "• The decision of the Judges and Event Coordinators is final."
+      " Only the assigned code names of participants must be announced.",
+      " The competition is strictly limited to Indian languages.",
+      " No vulgarity or profanity will be entertained.",
+      " Exceeding the time limit will result in a 5% mark deduction per minute.",
+      " Technical requirements must be communicated to the coordinators in advance.",
+      " The decision of the Judges and Event Coordinators is final."
     ],
     rounds: [
       {
         name: "Screening",
         details: [
-          "• Time Limit: 3 minutes.",
-          "• Judging will be based solely on vocal quality.",
-          "• No karaoke, accompanists, self-played instruments, or tanpura box are allowed."
+          " Time Limit: 3 minutes.",
+          " Judging will be based solely on vocal quality.",
+          " No karaoke, accompanists, self-played instruments, or tanpura box are allowed."
         ]
       },
       {
         name: "Finals",
         details: [
-          "• Time Limit: 6 minutes + 2 minutes (setup).",
-          "• Karaoke, accompanists, self-played instruments, and tanpura box are permitted.",
-          "• Tracks must be brought on a pen drive in MP3 format."
+          " Time Limit: 6 minutes + 2 minutes (setup).",
+          " Karaoke, accompanists, self-played instruments, and tanpura box are permitted.",
+          " Tracks must be brought on a pen drive in MP3 format."
         ]
       }
     ],
@@ -358,28 +358,28 @@ function App() {
     amount: 0,
     teamSize: "1",
     rules: [
-      "• Only the assigned code names of participants must be announced.",
-      "• The competition is strictly limited to Western languages.",
-      "• No vulgarity or profanity will be tolerated.",
-      "• Exceeding the time limit will result in a 5% mark deduction per minute.",
-      "• Technical requirements must be communicated to the coordinators in advance.",
-      "• The decision of the Judges and Event Coordinators is final."
+      " Only the assigned code names of participants must be announced.",
+      " The competition is strictly limited to Western languages.",
+      " No vulgarity or profanity will be tolerated.",
+      " Exceeding the time limit will result in a 5% mark deduction per minute.",
+      " Technical requirements must be communicated to the coordinators in advance.",
+      " The decision of the Judges and Event Coordinators is final."
     ],
     rounds: [
       {
         name: "Screening",
         details: [
-          "• Time Limit: 3 minutes.",
-          "• Judging will be based solely on vocal quality.",
-          "• No karaoke, accompanists, self-played instruments, or tanpura box are allowed."
+          " Time Limit: 3 minutes.",
+          " Judging will be based solely on vocal quality.",
+          " No karaoke, accompanists, self-played instruments, or tanpura box are allowed."
         ]
       },
       {
         name: "Finals",
         details: [
-          "• Time Limit: 6 minutes + 2 minutes (setup).",
-          "• Karaoke, accompanists, self-played instruments, and tanpura box are permitted.",
-          "• Tracks must be brought on a pen drive in MP3 format."
+          " Time Limit: 6 minutes + 2 minutes (setup).",
+          " Karaoke, accompanists, self-played instruments, and tanpura box are permitted.",
+          " Tracks must be brought on a pen drive in MP3 format."
         ]
       }
     ],
@@ -400,24 +400,24 @@ function App() {
     amount: 0,
     teamSize: "1",
     rules: [
-      "• Time Limit: 5 minutes + 2 minutes (setup).",
-      "• The competition is strictly limited to Indian Classical styles – Hindustani and Carnatic only.",
-      "• Film and folk songs are not allowed.",
-      "• Participants may be accompanied by one accompanist playing an Indian instrument.",
-      "• Electronic Tanpura is permitted, but backing tracks and karaoke are not.",
-      "• Only the assigned code names of participants must be announced.",
-      "• No vulgarity or profanity will be tolerated.",
-      "• Exceeding the time limit will result in a 5% mark deduction per minute.",
-      "• Technical requirements must be informed to the coordinators in advance.",
-      "• The decision of the Judges and Event Coordinators is final."
+      " Time Limit: 5 minutes + 2 minutes (setup).",
+      " The competition is strictly limited to Indian Classical styles – Hindustani and Carnatic only.",
+      " Film and folk songs are not allowed.",
+      " Participants may be accompanied by one accompanist playing an Indian instrument.",
+      " Electronic Tanpura is permitted, but backing tracks and karaoke are not.",
+      " Only the assigned code names of participants must be announced.",
+      " No vulgarity or profanity will be tolerated.",
+      " Exceeding the time limit will result in a 5% mark deduction per minute.",
+      " Technical requirements must be informed to the coordinators in advance.",
+      " The decision of the Judges and Event Coordinators is final."
     ],
     rounds: [
       {
         name: "Final Performance",
         details: [
-          "• Participants will perform their classical rendition in front of the judges.",
-          "• Performance should strictly adhere to Hindustani or Carnatic classical traditions.",
-          "• Accompanists are allowed with Indian instruments."
+          " Participants will perform their classical rendition in front of the judges.",
+          " Performance should strictly adhere to Hindustani or Carnatic classical traditions.",
+          " Accompanists are allowed with Indian instruments."
         ]
       }
     ],
@@ -440,23 +440,23 @@ function App() {
     amount: 0,
     teamSize: "1",
     rules: [
-      "• Time Limit: 4 minutes + 2 minutes for setup.",
-      "• The competition is strictly limited to percussion instruments such as Drums, Cajon, Congo, Tabla, etc.",
-      "• Only instrumental performances are allowed – no singing is permitted.",
-      "• Participants must bring their own instruments and accessories (cables, etc.).",
-      "• No backing tracks or accompanists are allowed.",
-      "• Only the assigned code names of participants must be announced.",
-      "• Exceeding the time limit will result in a 5% mark deduction per minute.",
-      "• Technical requirements must be informed to the coordinators one day in advance.",
-      "• The decision of the Judges and Event Coordinators is final."
+      " Time Limit: 4 minutes + 2 minutes for setup.",
+      " The competition is strictly limited to percussion instruments such as Drums, Cajon, Congo, Tabla, etc.",
+      " Only instrumental performances are allowed – no singing is permitted.",
+      " Participants must bring their own instruments and accessories (cables, etc.).",
+      " No backing tracks or accompanists are allowed.",
+      " Only the assigned code names of participants must be announced.",
+      " Exceeding the time limit will result in a 5% mark deduction per minute.",
+      " Technical requirements must be informed to the coordinators one day in advance.",
+      " The decision of the Judges and Event Coordinators is final."
     ],
     rounds: [
       {
         name: "Final Performance",
         details: [
-          "• Participants will perform their percussion solo in front of the judges.",
-          "• Only live percussion instruments are allowed, without any accompaniment or backing tracks.",
-          "• Judges will evaluate based on rhythm, technique, and creativity."
+          " Participants will perform their percussion solo in front of the judges.",
+          " Only live percussion instruments are allowed, without any accompaniment or backing tracks.",
+          " Judges will evaluate based on rhythm, technique, and creativity."
         ]
       }
     ],
@@ -477,23 +477,23 @@ function App() {
     amount: 0,
     teamSize: "1",
     rules: [
-      "• Time Limit: 4 minutes + 2 minutes for setup.",
-      "• The competition is restricted to non-percussion instruments such as Guitar, Piano, Violin, etc.",
-      "• Only instrumental performances are allowed – no singing is permitted.",
-      "• Participants must bring their own instruments and necessary accessories (cables, etc.).",
-      "• No backing tracks or accompanists are allowed.",
-      "• Only the assigned code names of participants must be announced.",
-      "• Exceeding the time limit will result in a 5% mark deduction per minute.",
-      "• Technical requirements must be informed to the coordinators one day in advance.",
-      "• The decision of the Judges and Event Coordinators is final."
+      " Time Limit: 4 minutes + 2 minutes for setup.",
+      " The competition is restricted to non-percussion instruments such as Guitar, Piano, Violin, etc.",
+      " Only instrumental performances are allowed – no singing is permitted.",
+      " Participants must bring their own instruments and necessary accessories (cables, etc.).",
+      " No backing tracks or accompanists are allowed.",
+      " Only the assigned code names of participants must be announced.",
+      " Exceeding the time limit will result in a 5% mark deduction per minute.",
+      " Technical requirements must be informed to the coordinators one day in advance.",
+      " The decision of the Judges and Event Coordinators is final."
     ],
     rounds: [
       {
         name: "Final Performance",
         details: [
-          "• Participants will perform their instrumental solo in front of the judges.",
-          "• Only live non-percussion instruments are allowed, without any accompaniment or backing tracks.",
-          "• Judges will evaluate based on melody, technique, and overall performance."
+          " Participants will perform their instrumental solo in front of the judges.",
+          " Only live non-percussion instruments are allowed, without any accompaniment or backing tracks.",
+          " Judges will evaluate based on melody, technique, and overall performance."
         ]
       }
     ],
@@ -514,25 +514,25 @@ function App() {
     amount: 0,
     teamSize: "4-8",
     rules: [
-      "• Time Limit: 6 minutes + 2 minutes for setup.",
-      "• Only acoustic instruments are allowed.",
-      "• Drums are not permitted.",
-      "• If using a piano, it must be set to Grand Piano mode only.",
-      "• A minimum of two songs must be performed.",
-      "• Use of karaoke or backing tracks is strictly prohibited.",
-      "• Exceeding the time limit will result in a 5% mark deduction per minute.",
-      "• Only the assigned code names of participants must be announced.",
-      "• Any form of vulgarity or profanity will not be tolerated.",
-      "• Technical requirements must be informed to the coordinators beforehand.",
-      "• The decision of the Judges and Event Coordinators is final."
+      " Time Limit: 6 minutes + 2 minutes for setup.",
+      " Only acoustic instruments are allowed.",
+      " Drums are not permitted.",
+      " If using a piano, it must be set to Grand Piano mode only.",
+      " A minimum of two songs must be performed.",
+      " Use of karaoke or backing tracks is strictly prohibited.",
+      " Exceeding the time limit will result in a 5% mark deduction per minute.",
+      " Only the assigned code names of participants must be announced.",
+      " Any form of vulgarity or profanity will not be tolerated.",
+      " Technical requirements must be informed to the coordinators beforehand.",
+      " The decision of the Judges and Event Coordinators is final."
     ],
     rounds: [
       {
         name: "Final Performance",
         details: [
-          "• Each team will perform at least two acoustic songs.",
-          "• The performance will be judged based on musicality, coordination, and creativity.",
-          "• No backing tracks or karaoke is allowed."
+          " Each team will perform at least two acoustic songs.",
+          " The performance will be judged based on musicality, coordination, and creativity.",
+          " No backing tracks or karaoke is allowed."
         ]
       }
     ],
@@ -556,15 +556,15 @@ function App() {
     teamSize: 1,
     rules: [
       "Round 1: Paper Painting",
-      "• Participants will be given a theme on the spot.",
-      "• Time limit: 60 minutes.",
-      "• Participants must bring their own paints, brushes, and materials.",
-      "• Paper will be provided.",
+      " Participants will be given a theme on the spot.",
+      " Time limit: 60 minutes.",
+      " Participants must bring their own paints, brushes, and materials.",
+      " Paper will be provided.",
       "Round 2: Pot Painting (For Selected Participants)",
-      "• Only participants selected from Round 1 will advance to Round 2.",
-      "• Participants will paint on pots provided by the organizers.",
-      "• Time limit: 90 minutes.",
-      "• Judging criteria: Creativity, adherence to theme, and artistic execution.",
+      " Only participants selected from Round 1 will advance to Round 2.",
+      " Participants will paint on pots provided by the organizers.",
+      " Time limit: 90 minutes.",
+      " Judging criteria: Creativity, adherence to theme, and artistic execution.",
       "Vulgarity or inappropriate artwork will lead to disqualification.",
       "The decision of the judges will be final and binding."
     ],
@@ -582,22 +582,22 @@ function App() {
     teamSize: 1,
     rules: [
       "Round 1: Paper Painting",
-      "• Participants will be provided with a sheet of paper and basic materials.",
-      "• Time limit: 60 minutes.",
-      "• A theme will be given on the spot.",
-      "• Participants must bring their own paints, brushes, and additional materials.",
+      " Participants will be provided with a sheet of paper and basic materials.",
+      " Time limit: 60 minutes.",
+      " A theme will be given on the spot.",
+      " Participants must bring their own paints, brushes, and additional materials.",
       "Round 2: Surprise Round",
-      "• Details of the round will be revealed at the event.",
-      "• Participants will be provided with necessary materials (if required).",
-      "• Time limit: 60 minutes.",
+      " Details of the round will be revealed at the event.",
+      " Participants will be provided with necessary materials (if required).",
+      " Time limit: 60 minutes.",
       "Round 3: Ultimate Creative Challenge",
-      "• A final surprise round to test creativity and skill.",
-      "• Details will be announced during the event.",
-      "• Time limit: 60 minutes.",
+      " A final surprise round to test creativity and skill.",
+      " Details will be announced during the event.",
+      " Time limit: 60 minutes.",
       "General Rules:",
-      "• Bonus points for originality in naming the artwork.",
-      "• Vulgarity or inappropriate artwork will lead to disqualification.",
-      "• The decision of the judges will be final and binding."
+      " Bonus points for originality in naming the artwork.",
+      " Vulgarity or inappropriate artwork will lead to disqualification.",
+      " The decision of the judges will be final and binding."
     ],
     contact: "1234567890",
     eventLink: "https://example.com/chitrakar-mela-register"
@@ -613,18 +613,18 @@ function App() {
     teamSize: { min: 2, max: 3 },
     rules: [
       "Round 1: Paper Painting",
-      "• Participants will be given a theme on the spot.",
-      "• Time limit: 60 minutes.",
-      "• Participants must bring their own paints, brushes, and materials.",
-      "• Paper will be provided.",
+      " Participants will be given a theme on the spot.",
+      " Time limit: 60 minutes.",
+      " Participants must bring their own paints, brushes, and materials.",
+      " Paper will be provided.",
       "Round 2: Sneaker Painting (For Selected Participants)",
-      "• Only participants selected from Round 1 will advance to Round 2.",
-      "• Participants will paint on sneakers provided by the organizers.",
-      "• Time limit: 90 minutes.",
-      "• Judging criteria: Creativity, adherence to theme, and artistic execution.",
+      " Only participants selected from Round 1 will advance to Round 2.",
+      " Participants will paint on sneakers provided by the organizers.",
+      " Time limit: 90 minutes.",
+      " Judging criteria: Creativity, adherence to theme, and artistic execution.",
       "General Rules:",
-      "• Vulgarity or inappropriate artwork will lead to disqualification.",
-      "• The decision of the judges will be final and binding."
+      " Vulgarity or inappropriate artwork will lead to disqualification.",
+      " The decision of the judges will be final and binding."
     ],
     contact: "1234567890",
     eventLink: "https://example.com/juton-ka-jalwa-register"
@@ -640,14 +640,14 @@ function App() {
     teamSize: 1,
     rules: [
       'The theme for the event is "Circus Spectacle".',
-      "• Theme Description: Participants must take inspiration from the dazzling world of the circus, incorporating elements of ringmasters, acrobats, clowns, and trapeze artists into their high-fashion looks.",
-      "• Bold stripes, ruffles, dramatic silhouettes, and playful accessories are encouraged.",
-      "• Time limit: 1+1 minutes (including setup and performance).",
-      "• Participants must carry their tracks on a pen drive and submit them in advance.",
-      "• Vulgarity or obscenity will lead to disqualification.",
-      "• Use of fireworks, water, or party props is strictly prohibited.",
-      "• Negative marking will be applied if participants exceed the time limit.",
-      "• The decision of the judges will be final and binding."
+      " Theme Description: Participants must take inspiration from the dazzling world of the circus, incorporating elements of ringmasters, acrobats, clowns, and trapeze artists into their high-fashion looks.",
+      " Bold stripes, ruffles, dramatic silhouettes, and playful accessories are encouraged.",
+      " Time limit: 1+1 minutes (including setup and performance).",
+      " Participants must carry their tracks on a pen drive and submit them in advance.",
+      " Vulgarity or obscenity will lead to disqualification.",
+      " Use of fireworks, water, or party props is strictly prohibited.",
+      " Negative marking will be applied if participants exceed the time limit.",
+      " The decision of the judges will be final and binding."
     ],
     contact: "1234567890",
     eventLink: "https://example.com/grand-masquerade-register"
@@ -663,18 +663,18 @@ function App() {
     teamSize: "10-15 (including backstage crew)",
     rules: [
       "Teams can choose either 'Warriors of the World' or 'Carnival of Dreams' as their theme.",
-      "• Time limit: 10-12 minutes (performance time).",
-      "• Background tracks are mandatory and must be submitted in advance.",
-      "• The backstage crew must not exceed 2 people and must be declared before the event.",
-      "• Use of water, fire, or fireworks (including party poppers) will lead to disqualification.",
-      "• Points will be deducted for vulgarity or deviation from fashion-related choreography.",
-      "• An additional 2 minutes are allowed for setup. Negative marking if exceeded.",
-      "• The decision of the judges will be final and binding.",
+      " Time limit: 10-12 minutes (performance time).",
+      " Background tracks are mandatory and must be submitted in advance.",
+      " The backstage crew must not exceed 2 people and must be declared before the event.",
+      " Use of water, fire, or fireworks (including party poppers) will lead to disqualification.",
+      " Points will be deducted for vulgarity or deviation from fashion-related choreography.",
+      " An additional 2 minutes are allowed for setup. Negative marking if exceeded.",
+      " The decision of the judges will be final and binding.",
       "Elimination Round (For Group Fashion Show):",
-      "• The Elimination Round will be conducted online.",
-      "• Teams must submit a video of their entire sequence (with costumes and props) to the event coordinators on/before 26th March.",
-      "• Teams must also submit a write-up containing information about the theme, duration, number of participants, and props used.",
-      "• Late submissions will be disqualified."
+      " The Elimination Round will be conducted online.",
+      " Teams must submit a video of their entire sequence (with costumes and props) to the event coordinators on/before 26th March.",
+      " Teams must also submit a write-up containing information about the theme, duration, number of participants, and props used.",
+      " Late submissions will be disqualified."
     ],
     contact: "1234567890",
     eventLink: "https://example.com/revelry-of-warriors-register"
@@ -765,33 +765,33 @@ function App() {
     amount: 0,
     teamSize: "2",
     rules: [
-      "• Use of unfair means will result in immediate disqualification.",
-      "• Use of inappropriate language, gestures, or signs is strictly prohibited.",
-      "• Participants must report to the venue 15 minutes before the event starts.",
-      "• Additional rules, gameplay details, and instructions will be briefed on the spot at the venue.",
-      "• All rounds are elimination rounds, and the number of qualifying teams will depend on participation.",
-      "• The decision of the judges will be final."
+      " Use of unfair means will result in immediate disqualification.",
+      " Use of inappropriate language, gestures, or signs is strictly prohibited.",
+      " Participants must report to the venue 15 minutes before the event starts.",
+      " Additional rules, gameplay details, and instructions will be briefed on the spot at the venue.",
+      " All rounds are elimination rounds, and the number of qualifying teams will depend on participation.",
+      " The decision of the judges will be final."
     ],
     rounds: [
       {
         name: "Round 1: Word Maze",
         details: [
-          "• Participants will navigate through a challenging word-based puzzle.",
-          "• Teams must solve the maze within the given time to qualify for the next round."
+          " Participants will navigate through a challenging word-based puzzle.",
+          " Teams must solve the maze within the given time to qualify for the next round."
         ]
       },
       {
         name: "Round 2: Fun Trivia",
         details: [
-          "• A thrilling literary trivia round to test participants’ knowledge of mysteries, literature, and famous authors.",
-          "• Teams with the highest scores will advance to the final round."
+          " A thrilling literary trivia round to test participants’ knowledge of mysteries, literature, and famous authors.",
+          " Teams with the highest scores will advance to the final round."
         ]
       },
       {
         name: "Round 3: Surprise Round",
         details: [
-          "• Details of this round will be revealed on the spot.",
-          "• Expect an exciting and unpredictable challenge!"
+          " Details of this round will be revealed on the spot.",
+          " Expect an exciting and unpredictable challenge!"
         ]
       }
     ],
@@ -815,19 +815,19 @@ function App() {
     amount: 0,
     teamSize: "2-3",
     rules: [
-      "• Participants must arrive at the venue 15 minutes before the event starts.",
-      "• Additional rules will be briefed on the spot.",
-      "• No low blows—insults should be witty, not personal or offensive.",
-      "• Any use of foul language, gestures, or inappropriate signs will result in penalties or immediate disqualification.",
-      "• The decision of the judges will be final."
+      " Participants must arrive at the venue 15 minutes before the event starts.",
+      " Additional rules will be briefed on the spot.",
+      " No low blows—insults should be witty, not personal or offensive.",
+      " Any use of foul language, gestures, or inappropriate signs will result in penalties or immediate disqualification.",
+      " The decision of the judges will be final."
     ],
     rounds: [
       {
         name: "Single Round: Roast Battle",
         details: [
-          "• Participants engage in a battle of wit and humor.",
-          "• The goal is to entertain while maintaining a balance between humor and respect.",
-          "• Expect surprises and twists in the competition."
+          " Participants engage in a battle of wit and humor.",
+          " The goal is to entertain while maintaining a balance between humor and respect.",
+          " Expect surprises and twists in the competition."
         ]
       }
     ],
@@ -849,25 +849,25 @@ function App() {
     amount: 0,
     teamSize: "2",
     rules: [
-      "• Participants must arrive at the venue 10 minutes before the event starts.",
-      "• Any form of plagiarism or use of technology during the event will result in disqualification.",
-      "• The top 6 teams from Round 1 will qualify for the final round.",
-      "• Additional rules regarding Round 2 will be briefed on the spot."
+      " Participants must arrive at the venue 10 minutes before the event starts.",
+      " Any form of plagiarism or use of technology during the event will result in disqualification.",
+      " The top 6 teams from Round 1 will qualify for the final round.",
+      " Additional rules regarding Round 2 will be briefed on the spot."
     ],
     rounds: [
       {
         name: "Round 1: Eliminator",
         details: [
-          "• A quiz covering topics like comics, mythology, sports, literature, cinema, and music.",
-          "• The top 6 teams will proceed to the final round."
+          " A quiz covering topics like comics, mythology, sports, literature, cinema, and music.",
+          " The top 6 teams will proceed to the final round."
         ]
       },
       {
         name: "Round 2: Rapid-Fire",
         details: [
-          "• A fast-paced round with 20 questions.",
-          "• Participants have 10 seconds to answer each question.",
-          "• Additional rules will be announced at the venue."
+          " A fast-paced round with 20 questions.",
+          " Participants have 10 seconds to answer each question.",
+          " Additional rules will be announced at the venue."
         ]
       }
     ],
@@ -891,22 +891,22 @@ function App() {
     amount: 0,
     teamSize: "1",
     rules: [
-      "• No language barrier—participants can choose any language.",
-      "• Participants must arrive at the venue 10 minutes before the event starts.",
-      "• Plagiarism or use of technology during the event will result in disqualification.",
-      "• Additional rules will be briefed at the venue.",
-      "• The judge's decision is final and binding."
+      " No language barrier—participants can choose any language.",
+      " Participants must arrive at the venue 10 minutes before the event starts.",
+      " Plagiarism or use of technology during the event will result in disqualification.",
+      " Additional rules will be briefed at the venue.",
+      " The judge's decision is final and binding."
     ],
     rounds: [
       {
         name: "Round 1",
-        details: ["• Participants perform their prepared poetry pieces."]
+        details: [" Participants perform their prepared poetry pieces."]
       },
       {
         name: "Round 2: The Final Showdown",
         details: [
-          "• Participants will be tested on spontaneity, wit, creativity, and expression.",
-          "• This round will determine the ultimate winner."
+          " Participants will be tested on spontaneity, wit, creativity, and expression.",
+          " This round will determine the ultimate winner."
         ]
       }
     ],
