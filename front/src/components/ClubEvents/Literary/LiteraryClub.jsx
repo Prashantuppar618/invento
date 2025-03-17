@@ -30,7 +30,7 @@ const PlayingCards = () => {
   const handleMouseDown = (image) => {
     const timer = setTimeout(() => {
       window.location.href = eventLinks[image]; // Redirect after 2s hold
-    }, 2000);
+    }, 5000);
     setHoldTimer(timer);
   };
 
