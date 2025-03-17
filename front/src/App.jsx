@@ -23,6 +23,15 @@ import Map from "./components/Map/Map.jsx";
 // import Contact from "./pages/Contact";
 // import Developers from "./pages/Developers";
 
+//importing bac images of cards
+import Mediaback from './assets/Mediaback.webp';
+import Culturalback from './assets/Culturalback.webp';
+import HRback from './assets/HRback.webp';
+import FRback from './assets/FRback.webp';
+import Sportsback from './assets/Sportsback.webp';
+import CDCback from './assets/CDCback.webp';
+import WECback from './assets/WECback.webp';
+import Literaryback from './assets/Literaryback.webp';
 
 import MediaClub from "./components/ClubEvents/Media/MediaClub";
 import HRClub from "./components/ClubEvents/HR/HRClub"; 
@@ -1023,14 +1032,14 @@ function App() {
           <div className="container">
             <Banner />
             <div className='titleCards'>
-              <Card3DRotation frontTitle="Media Club" frontText="Click for details" backTitle="Events" backText="Rulebook" frontImage={MediaImg} link="media-club"/>
-              <Card3DRotation frontTitle="HR Club" frontText="Click for details" backTitle="Events" backText="Rulebook" frontImage={hr} link="/hr-club"/>
-              <Card3DRotation frontTitle="Cultural Club" frontText="Click for details" backTitle="Events" backText="Rulebook" frontImage={cultural} link="/cultural-club"/>
-              <Card3DRotation frontTitle="Fine Arts" frontText="Click for details" backTitle="Events" backText="Rulebook" frontImage={fineArts} link="/fineArts-club"/>
-              <Card3DRotation frontTitle="Community Development Club" frontText="Click for details" backTitle="Events" backText="Rulebook" frontImage={comdev} link="/community-development-club" />
-              <Card3DRotation frontTitle="Sports Club" frontText="Click for details" backTitle="Events" backText="Rulebook" frontImage={sports} link="/sports-club" />
-              <Card3DRotation frontTitle="Women Empowerment Club" frontText="Click for details" backTitle="Events" backText="Rulebook" frontImage={women} link="/women-empowerment-club" />
-              <Card3DRotation frontTitle="Literary Club" frontText="Click for details" backTitle="Events" backText="Rulebook" frontImage={lit} link="/literary-club" />
+              <Card3DRotation frontTitle="Media Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={MediaImg} backImage={Mediaback} link="media-club"/>
+              <Card3DRotation frontTitle="HR Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={hr} backImage={HRback} link="/hr-club"/>
+              <Card3DRotation frontTitle="Cultural Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={cultural} backImage={Culturalback} link="/cultural-club"/>
+              <Card3DRotation frontTitle="Fine Arts" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={fineArts} backImage={FRback} link="/fineArts-club"/>
+              <Card3DRotation frontTitle="Community Development Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={comdev} backImage={CDCback} link="/community-development-club" />
+              <Card3DRotation frontTitle="Sports Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={sports} backImage={Sportsback} link="/sports-club" />
+              <Card3DRotation frontTitle="Women Empowerment Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={women} backImage={WECback} link="/women-empowerment-club" />
+              <Card3DRotation frontTitle="Literary Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={lit} backImage={Literaryback} link="/literary-club" />
             </div>
           </div>
         } />
