@@ -47,6 +47,7 @@ import { useState, useEffect } from "react";
 import Event from "./components/ClubEvents/Events/event.jsx";
 import ContactUs from "./components/ContactUs/ContactUs.jsx";
 
+import Footer from "./components/Footer.jsx";
 
 function App() {
 
@@ -1097,6 +1098,8 @@ function App() {
         <Route path="/WomenEmpowerment-events/Fireless-Cooking-Competition–(Flavors-on-Parade)" element={<Event event={firelessCooking} />} />
 
       </Routes>
+
+      <Footer />
     </Router>
   );
 }
