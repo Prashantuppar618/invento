@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="social-links">
                 <a href="https://www.instagram.com/invento_2k25?igsh=MXI1azFyOXpkbzNyYQ==" className="social-link" target='_blank'>
                   <Instagram size={20} />
-                  klescetmedia
+                  Invento2K25
                 </a>
               </div>
             </div>
