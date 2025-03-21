@@ -45,6 +45,7 @@ import { useState, useEffect } from "react";
 
 
 import Event from "./components/ClubEvents/Events/event.jsx";
+import ContactUs from "./components/ContactUs/ContactUs.jsx";
 
 
 function App() {
@@ -706,22 +707,22 @@ function App() {
     title: "The Jester's Joust (Debate)",
     description:
       "Step right up to the carnival of the mind, where every word is a weapon and every argument a challenge. In this eerie realm, logic is twisted and ideas collide, pushing you to defend, confront, and captivate. Let your intellect shine and your wit cut through the darkness—here, only the sharpest minds will survive, and the game is never as it seems. Welcome to the carnival, where every turn brings new tests and every debate shifts the very fabric of truth.",
-    backgroundImage: "/debate.webp", // You can change this to the actual image path
+    backgroundImage: "/debate.webp",
     type: "Team",
-    amount: 0, // If there's no participation fee, keep it 0
+    amount: 0,
     teamSize: 2,
     rules: [
-      "Participants are expected to report to the venue 10 minutes before the stated commencement time.",
-      "Participants will have to pick a chit and initiate the topic that they have received.",
-      "The topic will be disclosed to the debaters on the spot.",
-      "The Debaters shall be asked to irrevocably switch their stances at any given instant.",
-      "The debaters are allowed to counter the statements in an appropriate manner.",
-      "Use of any abusive or unparliamentary words or slang shall lead to immediate disqualification.",
-      "The best 6 teams will be selected for the final round.",
-      "The decision of the judges and jury will be final and non-disputable."
+      "The short film should not exceed 6 minutes in duration including titles and credits.",
+      "Films should not have been previously published in any media.",
+      "The video must be in MP4 or avi format.",
+      "Include a short synopsis for the entry.",
+      "Entries in other languages must have English subtitles.",
+      "The registered teams will have to submit their work on google drive link which will be provided on the WhatsApp group before the given deadline.",
+      "The theme for the movie will be released a week before on our social media platforms.",
+      "The organizing committee’s decision will be final."
     ],
-    contact: "9880783498", // Change this if there's a different contact person
-    eventLink: "https://example.com/jestersjoust-register" // Replace with actual registration link
+    contact: "9880783498",
+    eventLink: "https://example.com/jestersjoust-register"
   };
 
   const wickedAdCircus = {
@@ -1047,8 +1048,8 @@ function App() {
         {/* Other Pages */}
         <Route path="/rulebook" element={<Rulebook />} />
         <Route path="/map" element={<Map />} />
-        {/* <Route path="/contact" element={<Contact />} />
-        <Route path="/developers" element={<Developers />} /> */}
+        <Route path="/contact" element={<ContactUs />} />
+        {/* <Route path="/developers" element={<Developers />} /> */}
 
         <Route path="/media-club" element={<MediaClub />} />
         <Route path="/hr-club" element={<HRClub />} />

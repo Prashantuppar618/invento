@@ -53,6 +53,18 @@
   background: #ffffff;
   transform: rotateY(180deg);
   background-size: cover;
+  position: relative;
+}
+
+.card-back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Dark overlay (30% opacity) */
+  backdrop-filter: blur(3px); /* Adds a soft blur effect */
 }
 
 .card-depth {

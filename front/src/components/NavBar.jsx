@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Navbar.css';
+import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navlogo">
-                <img alt="Logo"/>
+                <img src={Logo} className="navLogo" alt="Invento_Logo" />
             </div>
             <div className="hamburger" onClick={toggleNav}>
                 <div className={open ? 'line line1 toggle' : 'line line1'}></div>
@@ -19,7 +20,7 @@ const Navbar = () => {
                 <div className={open ? 'line line3 toggle' : 'line line3'}></div>
             </div>
             <ul className={open ? 'nav-links open' : 'nav-links'}>
-                {['Home', 'Rulebook', 'Map', 'Contact', 'Developers'].map((text, index) => (
+                {['Home', 'Rulebook', 'Map', 'Contact'].map((text, index) => (
                     <li key={index}>
                     <a href={text === 'Home' ? '/' : `/${text.toLowerCase()}`}>{text}</a>
                     </li>
