@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="text-center">
             <h3 className="section-title">Contact Us</h3>
             <div className="contact-info">
-              <p className="contact-item">
+              <p className="footer-contact-item">
                 <Phone size={16} />
                 Mansi Patil
                 <a href="tel:+918317491367" style={{ color: 'inherit', textDecoration: 'none', marginLeft: '8px' }}>

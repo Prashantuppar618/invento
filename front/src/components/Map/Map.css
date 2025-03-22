@@ -5,6 +5,7 @@
   margin: auto;
   padding: 20px;
   font-family: "Arial", sans-serif;
+  margin-left: 80px;
 }
 
 /* 3D Animated Title */
@@ -15,13 +16,14 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   transition: transform 0.1s ease-out;
+  margin-top: 120px;
 }
 
 /* Arrange Image & Text Side by Side */
 .content-container {
   display: flex;
   align-items: flex-start;
-  gap: 30px;
+  gap: 80px;
   justify-content: space-between;
   align-items: center;
   justify-items: center;

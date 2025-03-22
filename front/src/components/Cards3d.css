@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  
 }
 
 .cards-wrapper {
@@ -12,7 +13,7 @@
 
 .card-container {
   perspective: 1200px;
-  flex: 0 1 calc(50% - 1rem); /* Two cards per row */
+  flex: 0 1 calc(50% - 1rem);
 }
 
 .card {
