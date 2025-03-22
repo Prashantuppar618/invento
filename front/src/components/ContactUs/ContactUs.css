@@ -10,6 +10,7 @@
   flex-wrap: wrap;
   padding-left: 200px;
   margin-top: 100px;
+  margin-left: -80px;
 }
 
 /* Google Maps */
@@ -33,11 +34,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -35px;
 }
 
 .contact-title {
   font-size: 2.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #ed4548; /* Deep Reddish-Pink */
   text-shadow: 0px 0px 15px rgba(255, 56, 60, 0.8); /* Intense red glow */
   font-family: 'Fredoka One', cursive;
@@ -54,14 +56,14 @@
 .contact-card {
   width: 220px;
   padding: 18px;
-  background: linear-gradient(135deg, #de7021, #FFA500, #fee765); /* Chocolate Brown → Orange → Gold */
+  background: linear-gradient(135deg, #fcc100, #ffb88c, #f9f871); /* Coral Pink → Peach Orange → Sunny Yellow */
   border-radius: 15px;
   text-align: center;
   box-shadow: 0px 0px 15px rgba(210, 105, 30, 0.6); 
   transition: transform 0.3s, box-shadow 0.3s;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  color: #fff; /* Ensures readability */
+  color: #ed4548 /* Ensures readability */
 }
 
 .contact-card:hover {
@@ -113,9 +115,34 @@
   .contact-container {
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .map-container {
+    width: 90%;
+    max-width: 400px;
+    height: 300px;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+    text-align: center;
   }
 
   .contact-cards {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    font-size: 0.9rem;
   }
 }

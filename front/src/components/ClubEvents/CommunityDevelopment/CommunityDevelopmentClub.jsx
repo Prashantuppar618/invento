@@ -68,23 +68,17 @@
 // export default PlayingCards;
 
 
-import React, { useState, useEffect } from "react";
-import DL_Community from "./DL_Community";
-import ML_Community from "./ML_Community";
+// import React, { useState, useEffect } from "react";
+// import DL_Community from "./DL_Community";
+// import ML_Community from "./ML_Community";
 
 const PlayingCards = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1100);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return isMobile ? <ML_Cultural /> : <DL_Cultural />;
+  return (
+    <div>
+      <h1>Welcome to Cultural Club</h1>
+      <PlayingCards />
+    </div>
+  );
 };
 
 export default PlayingCards;
