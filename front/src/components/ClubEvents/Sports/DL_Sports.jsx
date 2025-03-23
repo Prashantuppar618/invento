@@ -8,19 +8,19 @@ const cardImages = [
 
 // Event mapping for each card (update links as needed)
 const eventLinks = {
-  "13.png": "/CulturalClub-events/Symphonica-(Unplugged)",
-  "12.png": "/CulturalClub-events/Solo-Instrumental-Non-Percussion",
-  "11.png": "/CulturalClub-events/Solo-Instrumental-Percussion",
-  "10.png": "/cultural-club",
-  "9.png": "/CulturalClub-events/Solo-Singing-IndianClassical",
-  "8.png": "/CulturalClub-events/Solo-Singing-Western",
-  "7.png": "/CulturalClub-events/Solo-Singing-Eastern",
-  "6.png": "/cultural-club",
-  "5.png": "/CulturalClub-events/Carnival-Cadence-(GroupDance)",
-  "4.png": "/CulturalClub-events/The-Shadow-Waltz-(DuetDance)",
-  "3.png": "/cultural-club",
-  "2.png": "/CulturalClub-events/Tala-Tarang:Classical(SoloDance-Classical)",
-  "1.png": "/CulturalClub-events/Celestial-Cypher:Western-(SoloDance-Showdown)",
+  "13.png": "/sports-club",
+  "12.png": "/sports-club",
+  "11.png": "/sports-club",
+  "10.png": "/sports-club",
+  "9.png": "/sports-club",
+  "8.png": "/sports-club",
+  "7.png": "/sports-club",
+  "6.png": "/sports-club",
+  "5.png": "/sports-club",
+  "4.png": "/sports-club",
+  "3.png": "/sports-club",
+  "2.png": "/sports-club",
+  "1.png": "/sports-club",
 };
 
 const PlayingCards = () => {
@@ -30,7 +30,7 @@ const PlayingCards = () => {
   const handleMouseDown = (image) => {
     const timer = setTimeout(() => {
       window.location.href = eventLinks[image]; // Redirect after 2s hold
-    }, 1500);
+    }, 2000);
     setHoldTimer(timer);
   };
 
@@ -56,7 +56,7 @@ const PlayingCards = () => {
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
         >
-          <img src={`/Cultural/${image}`} alt={`Card ${image}`} />
+          <img src={`/cards/${image}`} alt={`Card ${image}`} />
         </div>
       ))}
       

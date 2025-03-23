@@ -157,6 +157,12 @@
   .content.show {
     opacity: 1;
   }
+
+  @media (width:1280px) {
+    .logoInv {
+      margin-right: 5rem ;
+    }
+  }
   
 
 
@@ -210,3 +216,4 @@
     margin-top:2.8rem ;
    }
   }
+

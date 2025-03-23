@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ML_Cultural.css";
+import "../css/ML_Common.css";
 
 const cardImages = [
   "13.png", "12.png", "11.png", "10.png", "9.png", "8.png", "7.png",
@@ -31,26 +31,30 @@ const ML_Cultural = () => {
   };
 
   return (
+    <div className="ml-cardCon">
     <div 
-      className={`club-container ${cardImages.length < 4 ? "center-events" : ""} ${isHovered ? "hovered" : "stacked"}`} 
+      className="ml-stack-container" 
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     >
       {cardImages.map((image, index) => (
-        <div 
-          key={index} 
-          className="club-item"
-          onClick={() => handleClick(image)}
-          style={{ cursor: "pointer", transform: isHovered ? `translateX(${index * 10}px)` : "none" }}
+        <div
+          className="ml-stack-card"
+          key={index}
+          style={{ "--i": index - 6 }}
+          onMouseDown={() => handleMouseDown(image)}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
         >
-          <div className="club-image">
-            <img src={`/Cultural/${image}`} alt={`Event ${image}`} />
-          </div>
+          <img src={`/Cultural/${image}`} alt={`Card ${image}`} />
         </div>
       ))}
+    </div>
+    <div className="ml-hold-note">
       {isHovered && (
-        <p className="hold-note">Click the correct card to proceed!</p>
+        <p>Click and hold the correct card to proceed!</p>
       )}
+    </div>
     </div>
   );
 };

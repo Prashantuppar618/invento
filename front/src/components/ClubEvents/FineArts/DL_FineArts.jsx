@@ -8,19 +8,19 @@ const cardImages = [
 
 // Event mapping for each card (update links as needed)
 const eventLinks = {
-  "13.png": "/CulturalClub-events/Symphonica-(Unplugged)",
-  "12.png": "/CulturalClub-events/Solo-Instrumental-Non-Percussion",
-  "11.png": "/CulturalClub-events/Solo-Instrumental-Percussion",
-  "10.png": "/cultural-club",
-  "9.png": "/CulturalClub-events/Solo-Singing-IndianClassical",
-  "8.png": "/CulturalClub-events/Solo-Singing-Western",
-  "7.png": "/CulturalClub-events/Solo-Singing-Eastern",
-  "6.png": "/cultural-club",
-  "5.png": "/CulturalClub-events/Carnival-Cadence-(GroupDance)",
-  "4.png": "/CulturalClub-events/The-Shadow-Waltz-(DuetDance)",
-  "3.png": "/cultural-club",
-  "2.png": "/CulturalClub-events/Tala-Tarang:Classical(SoloDance-Classical)",
-  "1.png": "/CulturalClub-events/Celestial-Cypher:Western-(SoloDance-Showdown)",
+  "13.png": "/fineArts-club",
+  "12.png": "/fineArts-club",
+  "11.png": "/FineArts-events/Revelry-of-Warriors–Where-Fashion-Meets-Valor,and-Style-Meets-Strength!",
+  "10.png": "/fineArts-club",
+  "9.png": "/FineArts-events/The-Grand-Masquerade–Unmask-Your-Style,Steal-the-Spotlight!",
+  "8.png": "/fineArts-club",
+  "7.png": "/fineArts-club",
+  "6.png": "/FineArts-events/Juton-Ka-Jalwa–Step-Into-Art,Walk-With-Creativity!",
+  "5.png": "/fineArts-club",
+  "4.png": "/FineArts-events/Chitrakar-Mela–Where-Every-Stroke-Tells-a-Story!",
+  "3.png": "/fineArts-club",
+  "2.png": "/FineArts-events/Rangilo-Matka–Where-Colors-Meet-Clay,Creativity-Takes-Flight!",
+  "1.png": "/fineArts-club",
 };
 
 const PlayingCards = () => {
@@ -30,7 +30,7 @@ const PlayingCards = () => {
   const handleMouseDown = (image) => {
     const timer = setTimeout(() => {
       window.location.href = eventLinks[image]; // Redirect after 2s hold
-    }, 1500);
+    }, 2000);
     setHoldTimer(timer);
   };
 
@@ -56,10 +56,9 @@ const PlayingCards = () => {
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
         >
-          <img src={`/Cultural/${image}`} alt={`Card ${image}`} />
+          <img src={`/FineArts/${image}`} alt={`Card ${image}`} />
         </div>
       ))}
-      
     </div>
     <div className="dl-hold-note">
       {isHovered && (

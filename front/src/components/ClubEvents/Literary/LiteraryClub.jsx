@@ -1,68 +1,20 @@
-import React, { useState } from "react";
-import "./LiteraryClub.css";
-
-const cardImages = [
-  "13.png", "12.png", "11.png", "10.png", "9.png", "8.png", "7.png",
-  "6.png", "5.png", "4.png", "3.png", "2.png", "1.png"
-];
-
-// Event mapping for each card (update links as needed)
-const eventLinks = {
-  "13.png": "/literary-club",
-  "12.png": "/literary-club",
-  "11.png": "/Literary-events/Kuch-Alfaaz-Hamare-Bhi",
-  "10.png": "/literary-club",
-  "9.png": "/literary-club",
-  "8.png": "/Literary-events/Ringmaster’s-Riddle-Run",
-  "7.png": "/literary-club",
-  "6.png": "/literary-club",
-  "5.png": "/Literary-events/Freakshow-Face-Off",
-  "4.png": "/literary-club",
-  "3.png": "/literary-club",
-  "2.png": "/Literary-events/Whispers-of-Literary-Mystery",
-  "1.png": "/literary-club",
-};
+import React, { useState, useEffect } from "react";
+import DL_Literary from "./DL_Literary";
+import ML_Literary from "./ML_Literary";
 
 const PlayingCards = () => {
-  const [holdTimer, setHoldTimer] = useState(null);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
 
-  const handleMouseDown = (image) => {
-    const timer = setTimeout(() => {
-      window.location.href = eventLinks[image]; // Redirect after 2s hold
-    }, 5000);
-    setHoldTimer(timer);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1100);
+    };
 
-  const handleMouseUp = () => {
-    if (holdTimer) {
-      clearTimeout(holdTimer); // Cancel redirection if released early
-    }
-  };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-  return (
-    <div 
-      className="stack-container" 
-      onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {cardImages.map((image, index) => (
-        <div
-          className="stack-card"
-          key={index}
-          style={{ "--i": index - 6 }}
-          onMouseDown={() => handleMouseDown(image)}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
-        >
-          <img src={`/Literary/${image}`} alt={`Card ${image}`} />
-        </div>
-      ))}
-      {isHovered && (
-        <p className="hold-note">Click and hold the correct card to proceed!</p>
-      )}
-    </div>
-  );
+  return isMobile ? <ML_Literary /> : <DL_Literary />;
 };
 
 export default PlayingCards;
