@@ -10,17 +10,17 @@ const cardImages = [
 // Event mapping for each card (update links as needed)
 const eventLinks = {
   "13.png": "/fineArts-club",
-  "12.png": "/fineArts-club",
-  "11.png": "/FineArts-events/Revelry-of-Warriors–Where-Fashion-Meets-Valor,and-Style-Meets-Strength!",
+  "12.png": "/FineArts-events/Juton-Ka-Jalwa–Step-Into-Art,Walk-With-Creativity!",
+  "11.png": "/fineArts-club",
   "10.png": "/fineArts-club",
-  "9.png": "/FineArts-events/The-Grand-Masquerade–Unmask-Your-Style,Steal-the-Spotlight!",
-  "8.png": "/fineArts-club",
+  "9.png": "/fineArts-club",
+  "8.png": "/FineArts-events/Chitrakar-Mela–Where-Every-Stroke-Tells-a-Story!",
   "7.png": "/fineArts-club",
-  "6.png": "/FineArts-events/Juton-Ka-Jalwa–Step-Into-Art,Walk-With-Creativity!",
+  "6.png": "/fineArts-club",
   "5.png": "/fineArts-club",
-  "4.png": "/FineArts-events/Chitrakar-Mela–Where-Every-Stroke-Tells-a-Story!",
+  "4.png": "/FineArts-events/Rangilo-Matka–Where-Colors-Meet-Clay,Creativity-Takes-Flight!",
   "3.png": "/fineArts-club",
-  "2.png": "/FineArts-events/Rangilo-Matka–Where-Colors-Meet-Clay,Creativity-Takes-Flight!",
+  "2.png": "/fineArts-club",
   "1.png": "/fineArts-club",
 };
 

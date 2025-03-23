@@ -117,3 +117,23 @@
     justify-content: flex-start;
   }
 }
+
+
+@media (max-width: 450px) {
+  .footer-container{
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-container{
+    margin-right: 20px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .footer-container{
+    margin-right: 40px;
+  }
+}

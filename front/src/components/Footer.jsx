@@ -66,7 +66,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="copyright">
-          © {new Date().getFullYear()} Made with ♡ by Prathamesh, Prashant, Pratik, Amaresh, Uma, Sandesh. All rights reserved.
+          © {new Date().getFullYear()} Made with ♡ by  Pratik, Prashant, Prathamesh, Amaresh, Uma, Sandesh, Jatin. All rights reserved.
         </div>
       </div>
     </footer>

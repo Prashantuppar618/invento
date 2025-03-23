@@ -30,7 +30,7 @@ const DL_Community = () => {
   const handleMouseDown = (image) => {
     const timer = setTimeout(() => {
       window.location.href = eventLinks[image]; // Redirect after 2s hold
-    }, 2000);
+    }, 1000);
     setHoldTimer(timer);
   };
 

@@ -6,7 +6,7 @@ import "./SurpriseBox.css";
 const SurpriseBox = () => {
   const [showPdf, setShowPdf] = useState(false);
   const [showAnimation, setShowAnimation] = useState(false);
-  const pdfUrl = "/ML-BASE_PAPER.pdf"; // Update this with actual PDF path
+  const pdfUrl = "/Invento Rule Book 2025.pdf"; // Update this with actual PDF path
   const containerRef = useRef(null);
 
   return (

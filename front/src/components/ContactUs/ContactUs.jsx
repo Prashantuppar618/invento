@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import "./ContactUs.css";
 
 const contacts = [
-  { name: "Raman Belgundi", phone: "+91 98765 43210" },
-  { name: "Akshata Revankar", phone: "+91 87654 32109" },
-  { name: "Mrunal Pai", phone: "+91 76543 21098" },
-  { name: "Susheel K", phone: "+91 65432 10987" },
+  { name: "Mansi Patil", phone: "+91 83174 91367" },
+  { name: "Sakshi Juvekar", phone: "+91 82960 92238" },
+  { name: "Harshvardhan Kumbhar", phone: "+91 91726 34865" },
+  { name: "Avinash Chavan", phone: "+91 90351 25258" },
 ];
 
 const ContactCard = ({ contact }) => {

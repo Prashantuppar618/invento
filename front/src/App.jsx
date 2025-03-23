@@ -15,6 +15,8 @@ import sports from './assets/sports.jpg';
 import comdev from './assets/Community_dev.jpg';
 import women from './assets/Women_Emp.jpg';
 import lit from './assets/Literary.jpg';
+import special from "./assets/Special_front.jpg"
+import titleevent from "./assets/TitleEvent_front.jpg" 
 
 // Import Pages
 
@@ -32,15 +34,21 @@ import Sportsback from './assets/Sportsback.webp';
 import CDCback from './assets/CDCback.webp';
 import WECback from './assets/WECback.webp';
 import Literaryback from './assets/Literaryback.webp';
+import Specialback from "./assets/Special_back.jpg"
+import TitleEventback from "./assets/TitleEvent_back.jpg"
 
-import MediaClub from "./components/ClubEvents/Media/MediaClub";
+// import MediaClub from "./components/ClubEvents/Media/MediaClub";
 import HRClub from "./components/ClubEvents/HR/HRClub"; 
 import CulturalClub from "./components/ClubEvents/Cultural/CulturalClub"; 
 import FineArtsClub from "./components/ClubEvents/FineArts/FineArtsClub"; 
 import CommunityDevelopmentClub from "./components/ClubEvents/CommunityDevelopment/CommunityDevelopmentClub"; 
 import SportsClub from "./components/ClubEvents/Sports/SportsClub"; 
 import WomenEmpowermentClub from "./components/ClubEvents/WomenEmpowerment/WomenEmpowermentClub"; 
-import LiteraryClub from "./components/ClubEvents/Literary/LiteraryClub"; 
+import LiteraryClub from "./components/ClubEvents/Literary/LiteraryClub";
+import MediaClub from "./components/ClubEvents/Media/MediaClub.jsx";
+import Specials from "./components/ClubEvents/Specials/Specials.jsx";
+import TitleEvents from "./components/ClubEvents/TitleEvents/TitleEvents.jsx"
+
 import { useState, useEffect } from "react";
 
 
@@ -57,7 +65,7 @@ function App() {
     setTimeout(() => setLoading(false), 2000); // Simulate loading delay
   }, []);
 
-  if (loading) return <Loading />;
+  // if (loading) return <Loading />;
 
   {/* CDC */}
   const carnivalFest = {
@@ -310,7 +318,7 @@ function App() {
 
   {/* Music */}
   const soloSingingEastern = {
-    title: "Solo Singing - Eastern (Melodia)",
+    title: "Eclipsed Voices (Solo Singing - Eastern)",
     description:
       "An enchanting musical competition where talented singers showcase their voices through Eastern melodies. A celebration of Indian music, tradition, and pure vocal artistry.",
     backgroundImage: "/solo_singing_eastern.webp",
@@ -352,7 +360,7 @@ function App() {
   };
   
   const soloSingingWestern = {
-    title: "Solo Singing - Western",
+    title: "Twilight Tunes (Solo Singing - Western)",
     description:
       "Step into the world of Western music and showcase your vocal talent. Mesmerize the audience with your enchanting melodies and let your voice take center stage.",
     backgroundImage: "/solo_singing_western.webp",
@@ -394,7 +402,7 @@ function App() {
   };
   
   const soloSingingIndianClassical = {
-    title: "Solo Singing - Indian Classical",
+    title: "Raga Radiance (Solo Singing - Indian Classical)",
     description:
       "Celebrate the richness of Indian classical music by showcasing your mastery of Hindustani and Carnatic styles. Let your soulful rendition captivate the audience and judges in this prestigious competition.",
     backgroundImage: "/solo_singing_indian_classical.webp",
@@ -434,7 +442,7 @@ function App() {
   
   
   const soloInstrumentalPercussion = {
-    title: "Solo Instrumental - Percussion",
+    title: "Celestial Rhythms (Solo Instrumental - Percussion)",
     description:
       "Rhythm is the heartbeat of music, and percussionists are its true architects. This event invites talented percussionists to showcase their mastery of rhythm and technique in an electrifying solo performance.",
     backgroundImage: "/solo_instrumental_percussion.webp",
@@ -471,7 +479,7 @@ function App() {
   };
   
   const soloInstrumentalNonPercussion = {
-    title: "Solo Instrumental - Non-Percussion",
+    title: "Stellar Strings (Solo Instrumental - Non-Percussion)",
     description:
       "Music transcends words, and melodies speak where words fail. This event invites talented instrumentalists to showcase their skills with non-percussion instruments such as Guitar, Piano, Violin, and more.",
     backgroundImage: "/solo_instrumental_non_percussion.webp",
@@ -612,7 +620,7 @@ function App() {
     backgroundImage: "/juton_ka_jalwa.webp",
     type: "Team",
     amount: 0,
-    teamSize: { min: 2, max: 3 },
+    teamSize: 2-3,
     rules: [
       "Round 1: Paper Painting",
       " Participants will be given a theme on the spot.",
@@ -631,56 +639,8 @@ function App() {
     contact: "1234567890",
     eventLink: "https://example.com/juton-ka-jalwa-register"
   };
-  
-  const grandMasquerade = {
-    title: "The Grand Masquerade – Unmask Your Style, Steal the Spotlight!",
-    description:
-      "Step into the enchanting world of fashion and mystery! The Grand Masquerade challenges participants to embody the essence of circus glamour with bold designs, dramatic silhouettes, and breathtaking performances. Can you own the stage and steal the show?",
-    backgroundImage: "/grand_masquerade.webp",
-    type: "Solo",
-    amount: 0,
-    teamSize: 1,
-    rules: [
-      'The theme for the event is "Circus Spectacle".',
-      " Theme Description: Participants must take inspiration from the dazzling world of the circus, incorporating elements of ringmasters, acrobats, clowns, and trapeze artists into their high-fashion looks.",
-      " Bold stripes, ruffles, dramatic silhouettes, and playful accessories are encouraged.",
-      " Time limit: 1+1 minutes (including setup and performance).",
-      " Participants must carry their tracks on a pen drive and submit them in advance.",
-      " Vulgarity or obscenity will lead to disqualification.",
-      " Use of fireworks, water, or party props is strictly prohibited.",
-      " Negative marking will be applied if participants exceed the time limit.",
-      " The decision of the judges will be final and binding."
-    ],
-    contact: "1234567890",
-    eventLink: "https://example.com/grand-masquerade-register"
-  };
-  
-  const revelryOfWarriors = {
-    title: "Revelry of Warriors – Where Fashion Meets Valor, and Style Meets Strength!",
-    description:
-      "Step into the arena where the fierceness of warriors meets the flamboyance of a carnival! Revelry of Warriors is a group fashion show that blends theatrical storytelling with high-fashion aesthetics. Choose between Warriors of the World or Carnival of Dreams and create an unforgettable spectacle of strength and style!",
-    backgroundImage: "/revelry_of_warriors.webp",
-    type: "Group",
-    amount: 0,
-    teamSize: "10-15 (including backstage crew)",
-    rules: [
-      "Teams can choose either 'Warriors of the World' or 'Carnival of Dreams' as their theme.",
-      " Time limit: 10-12 minutes (performance time).",
-      " Background tracks are mandatory and must be submitted in advance.",
-      " The backstage crew must not exceed 2 people and must be declared before the event.",
-      " Use of water, fire, or fireworks (including party poppers) will lead to disqualification.",
-      " Points will be deducted for vulgarity or deviation from fashion-related choreography.",
-      " An additional 2 minutes are allowed for setup. Negative marking if exceeded.",
-      " The decision of the judges will be final and binding.",
-      "Elimination Round (For Group Fashion Show):",
-      " The Elimination Round will be conducted online.",
-      " Teams must submit a video of their entire sequence (with costumes and props) to the event coordinators on/before 26th March.",
-      " Teams must also submit a write-up containing information about the theme, duration, number of participants, and props used.",
-      " Late submissions will be disqualified."
-    ],
-    contact: "1234567890",
-    eventLink: "https://example.com/revelry-of-warriors-register"
-  }; 
+
+  // HR
 
 
   const mockpress = {
@@ -727,21 +687,15 @@ function App() {
   };
 
   const wickedAdCircus = {
-    title: "The Wicked Ad Circus (Ad Mad)",
+    title: "The Wicked Ad Circus (Ad Mads)",
     description:
       "Think you can sell anything with creativity and persuasion? Ad Mad is your chance to prove it! Step into the world of advertising and showcase your marketing brilliance by crafting the most innovative and engaging ad for your chosen product.",
     backgroundImage: "/admad.webp", // Update with actual image path
     type: "Team",
     amount: 0, // Assuming no entry fee, update if needed
     teamSize: "3-5 members",
-    dateTime: "4th April, 11:00 AM",
-    teamsPerCollege: "Unlimited",
-    venue: "EEE Seminar Hall",
-    registrationType: "Online",
-    rounds: [
-      {
-        name: "Single Round",
-        description: [
+    rules: [
+      
           "Teams must select their own product in advance and prepare an advertisement.",
           "Each team will get 3-5 minutes to present their ad.",
           "Ads can be in any language but must not contain offensive, discriminatory, or inappropriate material.",
@@ -749,9 +703,7 @@ function App() {
           "Ideas and scripts must be original; copied content will lead to disqualification.",
           "Teams cannot use real company logos or trademarks in their ads.",
           "The judges’ decision will be final and binding."
-        ]
-      }
-    ],
+        ],
     contact: "9880783498", // Update if different
     eventLink: "https://example.com/admad-register" // Replace with actual registration link
   };
@@ -931,15 +883,9 @@ function App() {
     backgroundImage: "/monoacting.webp", // Update with actual image path
     type: "Solo",
     amount: 0, // Assuming no entry fee, update if needed
-    teamSize: "1",
-    dateTime: "3rd April, 11:00 AM",
-    venue: "EEE Seminar Hall",
-    teamsPerCollege: "Unlimited",
-    registrationType: "Online",
-    rounds: [
-      {
-        name: "Single Round",
-        description: [
+    teamSize: 1,
+    rules: [
+      
           "The time limit is 10 minutes.",
           "Participants can enact multiple characters.",
           "Performances can be in English, Hindi, Marathi, or Kannada.",
@@ -952,8 +898,6 @@ function App() {
           "Judging will be based on acting skills, dialogue delivery, and overall impact.",
           "The judges’ decisions are final and cannot be challenged.",
           "Any additional rules will be announced at the event."
-        ]
-      }
     ],
     contact: "9880783498", // Update if different
     eventLink: "https://example.com/monoacting-register" // Replace with actual registration link
@@ -981,6 +925,7 @@ function App() {
     contact: "1234567890",
     eventLink: "https://example.com/face-painting-register"
   };
+
   
   const nukkadNatak = {
     title: "Nukkad Natak – “Echoes of the Street”",
@@ -1002,6 +947,8 @@ function App() {
     contact: "1234567890",
     eventLink: "https://example.com/nukkad-natak-register"
   };
+
+  
   
   const firelessCooking = {
     title: "Fireless Cooking Competition – “Flavors on Parade”",
@@ -1025,6 +972,242 @@ function App() {
   };
 
 
+  // Media Club 
+
+
+  const carnivalChronicles = {
+    title: "Carnival Chronicles (Short Film)",
+    description:
+      "Step into the vibrant world of the carnival, where colours, excitement, and stories collide! The Carnival Fest short film competition invites filmmakers to capture the magic, mystery, and joy of carnival celebrations. From dazzling parades to thrilling rides, this competition calls for creative, dynamic films that showcase the energy, wonder, and diversity of carnival festivities. Whether you focus on the characters, the spectacle, or the behind-the-scenes moments, let your film transport the audience into a world of imagination, joy, and festivity.",
+    backgroundImage: "/shortfilm.webp",
+    type: "Team",
+    amount: 0,
+    teamSize: 7,
+    rules: [
+      "The short film should not exceed 6 minutes in duration including titles and credits.",
+      "Films should not have been previously published in any media.",
+      "The video must be in MP4 or AVI format.",
+      "Include a short synopsis for the entry.",
+      "Entries in other languages must have English subtitles.",
+      "The registered teams will have to submit their work on a Google Drive link which will be provided on the WhatsApp group before the given deadline.",
+      "The theme for the movie will be released a week before on our social media platforms.",
+      "The organizing committee’s decision will be final."
+    ],
+    // judgingCriteria: [
+    //   "Direction",
+    //   "Acting",
+    //   "Editing",
+    //   "Cinematography",
+    //   "Story",
+    //   "Audio"
+    // ],
+    contact: "N/A",
+    eventLink: "https://example.com/bigtopcinema-register"
+};
+
+const snapshotSpectacle = {
+    title: "Snapshot Spectacle (Photography)",
+    description:
+      "Capture the vibrant energy and colorful spirit of the carnival through your lens! The Carnival Fest photography competition invites photographers to showcase the lively moments, dazzling costumes, joyful faces, and captivating scenes of carnival celebrations. Whether it’s a close-up of a mask, the excitement of a parade, or the lights and movement of carnival rides, we encourage you to explore the magic and chaos of this festive experience. Your photos should reflect the essence of carnival — its energy, colors, and the stories unfolding in every corner.",
+    backgroundImage: "/photography.webp",
+    type: "Solo",
+    amount: 0,
+    teamSize: 1,
+    rules: [
+      "Photos must be in JPG or JPEG file format.",
+      "Minimal photo editing is permissible, but altering the photograph is not allowed.",
+      "We assume that every photo submission is legitimate. However, if a photo is suspected of alteration, it will be rejected.",
+      "The final decision rests with the Organizing Committee.",
+      "Photographs should not have been previously published in any media.",
+      "The registered participants will have to submit their work on a Google Drive link which will be provided on the WhatsApp group before the given deadline.",
+      "The theme for the event will be given on the spot."
+    ],
+    // judgingCriteria: [
+    //   "Creativity",
+    //   "Technical Skills Displayed",
+    //   "Theme Representation"
+    // ],
+    contact: "N/A",
+    eventLink: "https://example.com/photography-register"
+};
+
+const reelRhapsody = {
+    title: "Reel Rhapsody (Reel Making)",
+    description:
+      "Get ready to bring the carnival to life through your creativity! The Carnival Fest reel making competition invites creators to capture the high-energy, vibrant moments of carnival celebrations in short, engaging reels. Whether it’s the excitement of the rides, the joy of the crowd, or the beauty of the colorful costumes, your reel should highlight the thrill and magic of the carnival experience. Use music, fast-paced edits, and unique angles to transport your audience into the heart of the festivities and showcase the unforgettable atmosphere of the carnival!",
+    backgroundImage: "/reelmaking.webp",
+    type: "Solo",
+    amount: 0,
+    teamSize: 1,
+    rules: [
+      "The reel should be between 15 to 60 seconds long.",
+      "All footage and audio must be original. Use only royalty-free music or content you have the rights to.",
+      "Submit your reel in vertical format (9:16 aspect ratio), perfect for platforms like Instagram Reels.",
+      "Keep your reel family-friendly with no explicit or inappropriate material.",
+      "The registered participants will have to submit their work on a Google Drive link which will be provided on the WhatsApp group before the given deadline."
+    ],
+    // judgingCriteria: [
+    //   "Creativity",
+    //   "Relevance to the theme",
+    //   "Visual appeal"
+    // ],
+    contact: "N/A",
+    eventLink: "https://example.com/reelmaking-register"
+};
+
+// Sports
+
+const carnivalSurvival = {
+  title: "Carnival Survival (Squid Games)",
+  description:
+    "An Indian version of Squid Game featuring traditional childhood games with high-stakes twists. Each task will test physical skill, strategy, and survival. Teams must navigate through five unique challenges, blending agility, precision, and endurance. The team that completes all tasks in the shortest time emerges victorious!",
+  backgroundImage: "/carnival-survival.webp",
+  type: "Team",
+  amount: 0,
+  teamSize: 5,
+  rules: [
+    "Each team must have a minimum of 2 girls.",
+    "There will be a total of 5 tasks.",
+    "All participants are required to be present at the venue at least 30 minutes before the event begins.",
+    "The decisions made by the coordinators are final.",
+    "ID cards are compulsory.",
+    "A rope is tied among teammates, and only one game is played at a time.",
+    "Each player must participate in one task, meaning five tasks for five members.",
+    "The team that completes all the tasks in the shortest time is the winner.",
+    "The rules for each task will be explained during the game."
+  ],
+  // tasks: [
+  //   {
+  //     name: "Spinning Top (Bugari)",
+  //     description: "Players wrap a thin rope around a bugari top, release it onto the floor, and must catch it in their hand while it spins."
+  //   },
+  //   {
+  //     name: "Gong-gi (Handai)",
+  //     description: "Players must catch pebbles or plastic stones through a series of levels, ending with all five landing on the back of their hand and catching them all to complete the game."
+  //   },
+  //   {
+  //     name: "Marble",
+  //     description: "Players take turns shooting marbles by stretching a marble taut in their forefinger and releasing it to hit another marble."
+  //   },
+  //   {
+  //     name: "Cup Pyramid",
+  //     description: "Players must stack 10 cups into a pyramid shape (4-3-2-1 levels) as quickly as possible, then take it down while performing 15 pushups before restacking."
+  //   },
+  //   {
+  //     name: "Juggling-Football",
+  //     description: "Players must juggle a football, keeping it in the air using parts of their body other than their hands or arms."
+  //   }
+  // ],
+  contact: "N/A",
+  eventLink: "https://example.com/carnival-survival-register"
+};
+
+
+// Title-Events
+
+const mrMsInvento = {
+  title: "Mr. & Ms. Invento",
+  description:
+    "Do you have what it takes to be the ultimate showstopper of the carnival? Mr. and Miss Invento is the crown jewel of the carnival! This event demands charm, wit, and unshakable resilience. Contestants must dazzle, adapt, and conquer every twist that comes their way. Only the boldest will rise above the spectacle—do you have what it takes to be the Ringmaster of this grand show?",
+  backgroundImage: "/mr-ms-invento.webp",
+  type: "Individual",
+  amount: 0,
+  teamSize: 1,
+  rules: [
+    "Teams per college: Unlimited",
+    "The event consists of 3 rounds.",
+    "All participants must be present at the venue at least 30 minutes before the event begins.",
+    "The decisions made by the coordinators are final.",
+    "ID cards are compulsory.",
+    "Each round will test different skills, including critical thinking, endurance, and confidence.",
+    "The details of each round will be disclosed during the event."
+  ],
+  contact: "8050018611",
+  eventLink: "https://example.com/mr-ms-invento-register"
+};
+
+const muscleMonarch = {
+  title: "Muscle Monarch - Best Physique",
+  description:
+    "A competition to crown the ultimate physique champion. Contestants will showcase their strength, aesthetics, and discipline to prove they are the true Muscle Monarch!",
+  backgroundImage: "/muscle-monarch.webp",
+  type: "Individual",
+  amount: 0,
+  teamSize: 1,
+  rules: [
+    "Teams per college: Unlimited",
+    "All competitors must wear proper bodybuilding shorts during the competition.",
+    "Shorts should be above the knee and provide adequate coverage.",
+    "No logos or designs that promote brands or sponsors are allowed.",
+    "All participants must carry a valid College ID for verification purposes.",
+    "Photocopies or digital copies of IDs will not be accepted. Only original IDs are valid.",
+    "The use of anabolic steroids, performance-enhancing drugs, or banned substances is strictly prohibited.",
+    "Any competitor found using such substances will face immediate disqualification.",
+    "Competitors must bring their own body paint or tanning products.",
+    "The competition will have multiple qualification rounds based on different judging criteria.",
+    "Judges will evaluate participants in each round, and only the top performers will proceed to the final round.",
+    "Any form of misconduct, unsportsmanlike behavior, or failure to follow instructions will lead to immediate disqualification.",
+    "The event organizers reserve the right to amend rules and make final decisions in case of disputes."
+  ],
+
+  contact: "8660579723",
+  eventLink: "https://example.com/muscle-monarch-register"
+};
+
+
+
+// Specials
+
+const grandMasquerade = {
+  title: "The Grand Masquerade – Unmask Your Style, Steal the Spotlight! (Solo Fashion)",
+  description:
+    "Step into the enchanting world of fashion and mystery! The Grand Masquerade challenges participants to embody the essence of circus glamour with bold designs, dramatic silhouettes, and breathtaking performances. Can you own the stage and steal the show?",
+  backgroundImage: "/grand_masquerade.webp",
+  type: "Solo",
+  amount: 0,
+  teamSize: 1,
+  rules: [
+    'The theme for the event is "Circus Spectacle".',
+    " Theme Description: Participants must take inspiration from the dazzling world of the circus, incorporating elements of ringmasters, acrobats, clowns, and trapeze artists into their high-fashion looks.",
+    " Bold stripes, ruffles, dramatic silhouettes, and playful accessories are encouraged.",
+    " Time limit: 1+1 minutes (including setup and performance).",
+    " Participants must carry their tracks on a pen drive and submit them in advance.",
+    " Vulgarity or obscenity will lead to disqualification.",
+    " Use of fireworks, water, or party props is strictly prohibited.",
+    " Negative marking will be applied if participants exceed the time limit.",
+    " The decision of the judges will be final and binding."
+  ],
+  contact: "1234567890",
+  eventLink: "https://example.com/grand-masquerade-register"
+};
+
+const revelryOfWarriors = {
+  title: "Revelry of Warriors – Where Fashion Meets Valor, and Style Meets Strength! (Group Fashion Show)",
+  description:
+    "Step into the arena where the fierceness of warriors meets the flamboyance of a carnival! Revelry of Warriors is a group fashion show that blends theatrical storytelling with high-fashion aesthetics. Choose between Warriors of the World or Carnival of Dreams and create an unforgettable spectacle of strength and style!",
+  backgroundImage: "/revelry_of_warriors.webp",
+  type: "Group",
+  amount: 0,
+  teamSize: "10-15 (including backstage crew)",
+  rules: [
+    "Teams can choose either 'Warriors of the World' or 'Carnival of Dreams' as their theme.",
+    " Time limit: 10-12 minutes (performance time).",
+    " Background tracks are mandatory and must be submitted in advance.",
+    " The backstage crew must not exceed 2 people and must be declared before the event.",
+    " Use of water, fire, or fireworks (including party poppers) will lead to disqualification.",
+    " Points will be deducted for vulgarity or deviation from fashion-related choreography.",
+    " An additional 2 minutes are allowed for setup. Negative marking if exceeded.",
+    " The decision of the judges will be final and binding.",
+    "Elimination Round (For Group Fashion Show):",
+    " The Elimination Round will be conducted online.",
+    " Teams must submit a video of their entire sequence (with costumes and props) to the event coordinators on/before 26th March.",
+    " Teams must also submit a write-up containing information about the theme, duration, number of participants, and props used.",
+    " Late submissions will be disqualified."
+  ],
+  contact: "1234567890",
+  eventLink: "https://example.com/revelry-of-warriors-register"
+};
+
   return (
     <Router>
       <Navbar />
@@ -1034,14 +1217,17 @@ function App() {
           <div className="container">
             <Banner />
             <div className='titleCards'>
-              <Card3DRotation frontTitle="Media Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={MediaImg} backImage={Mediaback} link="media-club"/>
-              <Card3DRotation frontTitle="HR Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={hr} backImage={HRback} link="/hr-club"/>
-              <Card3DRotation frontTitle="Cultural Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={cultural} backImage={Culturalback} link="/cultural-club"/>
-              <Card3DRotation frontTitle="Fine Arts" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={fineArts} backImage={FRback} link="/fineArts-club"/>
-              <Card3DRotation frontTitle="Community Development Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={comdev} backImage={CDCback} link="/community-development-club" />
-              <Card3DRotation frontTitle="Sports Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={sports} backImage={Sportsback} link="/sports-club" />
-              <Card3DRotation frontTitle="Women Empowerment Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={women} backImage={WECback} link="/women-empowerment-club" />
-              <Card3DRotation frontTitle="Literary Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rulebook" frontImage={lit} backImage={Literaryback} link="/literary-club" />
+              <Card3DRotation frontTitle="Media Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={MediaImg} backImage={Mediaback} link="media-club"/>
+              <Card3DRotation frontTitle="HR Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={hr} backImage={HRback} link="/hr-club"/>
+              <Card3DRotation frontTitle="Cultural Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={cultural} backImage={Culturalback} link="/cultural-club"/>
+              <Card3DRotation frontTitle="Fine Arts" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={fineArts} backImage={FRback} link="/fineArts-club"/>
+              <Card3DRotation frontTitle="Community Development Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={comdev} backImage={CDCback} link="/community-development-club" />
+              <Card3DRotation frontTitle="Sports Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={sports} backImage={Sportsback} link="/sports-club" />
+              <Card3DRotation frontTitle="Women Empowerment Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={women} backImage={WECback} link="/women-empowerment-club" />
+              <Card3DRotation frontTitle="Literary Club" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={lit} backImage={Literaryback} link="/literary-club" />
+              <Card3DRotation frontTitle="Specials" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={special} backImage={Specialback} link="/specials" />
+              <Card3DRotation frontTitle="Title Events" frontText="Click for details" backTitle="Go To Events Page" backText="Rules" frontImage={titleevent} backImage={TitleEventback} link="/title-events" />
+
             </div>
           </div>
         } />
@@ -1060,6 +1246,8 @@ function App() {
         <Route path="/sports-club" element={<SportsClub />} />
         <Route path="/women-empowerment-club" element={<WomenEmpowermentClub />} />
         <Route path="/literary-club" element={<LiteraryClub />} />
+        <Route path="/specials" element={<Specials />} />
+        <Route path="/title-events" element={<TitleEvents />} />
 
 
         <Route path="/CommunityDevelopment-events/Carnival-Fest" element={<Event event={carnivalFest} />} />
@@ -1080,8 +1268,6 @@ function App() {
         <Route path="/FineArts-events/Rangilo-Matka–Where-Colors-Meet-Clay,Creativity-Takes-Flight!" element={<Event event={rangiloMatka} />} />
         <Route path="/FineArts-events/Chitrakar-Mela–Where-Every-Stroke-Tells-a-Story!" element={<Event event={chitrakarMela} />} />
         <Route path="/FineArts-events/Juton-Ka-Jalwa–Step-Into-Art,Walk-With-Creativity!" element={<Event event={jutonKaJalwa} />} />
-        <Route path="/FineArts-events/The-Grand-Masquerade–Unmask-Your-Style,Steal-the-Spotlight!" element={<Event event={grandMasquerade} />} />
-        <Route path="/FineArts-events/Revelry-of-Warriors–Where-Fashion-Meets-Valor,and-Style-Meets-Strength!" element={<Event event={revelryOfWarriors} />} />
         
         <Route path="/HumanResource-events/The-Addams-Press-(Mock-Press)" element={<Event event={mockpress} />} />
         <Route path="/HumanResource-events/The-Jester's-Joust-(Debate)" element={<Event event={jestersJoust} />} />
@@ -1097,9 +1283,22 @@ function App() {
         <Route path="/WomenEmpowerment-events/Nukkad-Natak–(Echoes-of-the-Street)" element={<Event event={nukkadNatak} />} />
         <Route path="/WomenEmpowerment-events/Fireless-Cooking-Competition–(Flavors-on-Parade)" element={<Event event={firelessCooking} />} />
 
+        <Route path="/Media-club/Carnival-Chronicles-(Short-Film)" element={<Event event={carnivalChronicles} />} />
+        <Route path="/Media-club/Snapshot-Spectacle-(Photography)" element={<Event event={snapshotSpectacle} />} />
+        <Route path="/Media-club/Reel-Rhapsody-(Reel-Making)" element={<Event event={reelRhapsody} />} />
+
+        <Route path="/Sports-events/Carnival-Survival-(Squid-Games)" element={<Event event={carnivalSurvival} />} />
+
+        <Route path="/Specials/The-Great-Circus-Run" element={<Event event={reelRhapsody} />} />
+        <Route path="/Specials/The-Grand-Masquerade–Unmask-Your-Style,Steal-the-Spotlight!" element={<Event event={grandMasquerade} />} />
+        <Route path="/Specials/Revelry-of-Warriors–Where-Fashion-Meets-Valor,and-Style-Meets-Strength!" element={<Event event={revelryOfWarriors} />} />
+
+        <Route path="/title-events/Mr.& Ms.Invento" element={<Event event={mrMsInvento} />} />
+        <Route path="/title-events/Muscle-monarch-(Best-Physique)" element={<Event event={muscleMonarch} />} />
+
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

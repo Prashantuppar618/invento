@@ -127,6 +127,11 @@
   .content-container {
     flex-direction: column;
     gap: 20px;
+    margin-right: 80px;
+  }
+
+  .title-3d{
+    margin-right: 80px;
   }
 
   .map-wrapper {
