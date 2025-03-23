@@ -23,7 +23,7 @@ const eventLinks = {
   "1.png": "/HumanResource-events/The-Addams-Press-(Mock-Press)",
 };
 
-const PlayingCards = () => {
+const DL_HR = () => {
   const [holdTimer, setHoldTimer] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -41,15 +41,15 @@ const PlayingCards = () => {
   };
 
   return (
-    <div className="cardCon">
-      <div 
-      className="stack-container" 
+    <div className="dl-cardCon">
+    <div 
+      className="dl-stack-container" 
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     >
       {cardImages.map((image, index) => (
         <div
-          className="stack-card"
+          className="dl-stack-card"
           key={index}
           style={{ "--i": index - 6 }}
           onMouseDown={() => handleMouseDown(image)}
@@ -59,8 +59,8 @@ const PlayingCards = () => {
           <img src={`/HR/${image}`} alt={`Card ${image}`} />
         </div>
       ))}
-      
     </div>
+
     <div className="dl-hold-note">
       {isHovered && (
         <p>Click and hold the correct card to proceed!</p>
@@ -70,4 +70,4 @@ const PlayingCards = () => {
   );
 };
 
-export default PlayingCards;
+export default DL_HR;

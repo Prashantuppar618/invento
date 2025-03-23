@@ -23,53 +23,51 @@ const cardImages = [
     "1.png": "/literary-club",
   };
 
-const PlayingCards = () => {
+const DL_Media = () => {
   const [holdTimer, setHoldTimer] = useState(null);
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseDown = (image) => {
-    const timer = setTimeout(() => {
-      window.location.href = eventLinks[image]; // Redirect after 2s hold
-    }, 2000);
-    setHoldTimer(timer);
-  };
-
-  const handleMouseUp = () => {
-    if (holdTimer) {
-      clearTimeout(holdTimer); // Cancel redirection if released early
-    }
-  };
-
-  return (
-    <div className="cardCon">
+    const [isHovered, setIsHovered] = useState(false);
+  
+    const handleMouseDown = (image) => {
+      const timer = setTimeout(() => {
+        window.location.href = eventLinks[image]; // Redirect after 2s hold
+      }, 2000);
+      setHoldTimer(timer);
+    };
+  
+    const handleMouseUp = () => {
+      if (holdTimer) {
+        clearTimeout(holdTimer); // Cancel redirection if released early
+      }
+    };
+  
+    return (
+      <div className="dl-cardCon">
       <div 
-      className="stack-container" 
-      onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {cardImages.map((image, index) => (
-        <div
-          className="stack-card"
-          key={index}
-          style={{ "--i": index - 6 }}
-          onMouseDown={() => handleMouseDown(image)}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
-        >
-          <img src={`/Literary/${image}`} alt={`Card ${image}`} />
-        </div>
-      ))}
-      
-    </div>
-
-    <div className="dl-hold-note">
-      {isHovered && (
-        <p>Click and hold the correct card to proceed!</p>
-      )}
-    </div>
-    
-    </div>
-  );
+        className="dl-stack-container" 
+        onMouseEnter={() => setIsHovered(true)} 
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {cardImages.map((image, index) => (
+          <div
+            className="dl-stack-card"
+            key={index}
+            style={{ "--i": index - 6 }}
+            onMouseDown={() => handleMouseDown(image)}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
+          >
+            <img src={`/Literary/${image}`} alt={`Card ${image}`} />
+          </div>
+        ))}
+      </div>
+  
+      <div className="dl-hold-note">
+        {isHovered && (
+          <p>Click and hold the correct card to proceed!</p>
+        )}
+      </div>
+      </div>
+    );
 };
 
-export default PlayingCards;
+export default DL_Media;

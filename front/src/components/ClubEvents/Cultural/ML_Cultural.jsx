@@ -24,11 +24,21 @@ const eventLinks = {
 };
 
 const ML_Cultural = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleClick = (image) => {
-    window.location.href = eventLinks[image]; // Redirect on click
-  };
+  const [holdTimer, setHoldTimer] = useState(null);
+    const [isHovered, setIsHovered] = useState(false);
+  
+    const handleMouseDown = (image) => {
+      const timer = setTimeout(() => {
+        window.location.href = eventLinks[image]; // Redirect after 2s hold
+      }, 1500);
+      setHoldTimer(timer);
+    };
+  
+    const handleMouseUp = () => {
+      if (holdTimer) {
+        clearTimeout(holdTimer); // Cancel redirection if released early
+      }
+    };
 
   return (
     <div className="ml-cardCon">

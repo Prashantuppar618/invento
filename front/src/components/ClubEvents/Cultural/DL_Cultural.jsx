@@ -23,14 +23,14 @@ const eventLinks = {
   "1.png": "/CulturalClub-events/Celestial-Cypher:Western-(SoloDance-Showdown)",
 };
 
-const PlayingCards = () => {
+const DL_Cultural = () => {
   const [holdTimer, setHoldTimer] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseDown = (image) => {
     const timer = setTimeout(() => {
       window.location.href = eventLinks[image]; // Redirect after 2s hold
-    }, 1500);
+    }, 2000);
     setHoldTimer(timer);
   };
 
@@ -41,15 +41,15 @@ const PlayingCards = () => {
   };
 
   return (
-    <div className="cardCon">
-        <div 
-      className="stack-container" 
+    <div className="dl-cardCon">
+    <div 
+      className="dl-stack-container" 
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     >
       {cardImages.map((image, index) => (
         <div
-          className="stack-card"
+          className="dl-stack-card"
           key={index}
           style={{ "--i": index - 6 }}
           onMouseDown={() => handleMouseDown(image)}
@@ -59,8 +59,8 @@ const PlayingCards = () => {
           <img src={`/Cultural/${image}`} alt={`Card ${image}`} />
         </div>
       ))}
-      
     </div>
+
     <div className="dl-hold-note">
       {isHovered && (
         <p>Click and hold the correct card to proceed!</p>
@@ -70,4 +70,4 @@ const PlayingCards = () => {
   );
 };
 
-export default PlayingCards;
+export default DL_Cultural;

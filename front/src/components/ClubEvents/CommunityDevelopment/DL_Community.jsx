@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "../css/DL_Common.css";
+import "../css/DL_Common.css";
 
 const cardImages = [
   "13.png", "12.png", "11.png", "10.png", "9.png", "8.png", "7.png",

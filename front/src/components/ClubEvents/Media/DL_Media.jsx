@@ -23,53 +23,51 @@ const cardImages = [
     "1.png": "/media-club",
 };
 
-const PlayingCards = () => {
-  const [holdTimer, setHoldTimer] = useState(null);
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseDown = (image) => {
-    const timer = setTimeout(() => {
-      window.location.href = eventLinks[image]; // Redirect after 2s hold
-    }, 2000);
-    setHoldTimer(timer);
-  };
-
-  const handleMouseUp = () => {
-    if (holdTimer) {
-      clearTimeout(holdTimer); // Cancel redirection if released early
-    }
-  };
-
-  return (
-    <div className="cardCon">
-      <div 
-      className="stack-container" 
-      onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {cardImages.map((image, index) => (
-        <div
-          className="stack-card"
-          key={index}
-          style={{ "--i": index - 6 }}
-          onMouseDown={() => handleMouseDown(image)}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
+const DL_Media = () => {
+   const [holdTimer, setHoldTimer] = useState(null);
+      const [isHovered, setIsHovered] = useState(false);
+    
+      const handleMouseDown = (image) => {
+        const timer = setTimeout(() => {
+          window.location.href = eventLinks[image]; // Redirect after 2s hold
+        }, 2000);
+        setHoldTimer(timer);
+      };
+    
+      const handleMouseUp = () => {
+        if (holdTimer) {
+          clearTimeout(holdTimer); // Cancel redirection if released early
+        }
+      };
+    
+      return (
+        <div className="dl-cardCon">
+        <div 
+          className="dl-stack-container" 
+          onMouseEnter={() => setIsHovered(true)} 
+          onMouseLeave={() => setIsHovered(false)}
         >
-          <img src={`/cards/${image}`} alt={`Card ${image}`} />
+          {cardImages.map((image, index) => (
+            <div
+              className="dl-stack-card"
+              key={index}
+              style={{ "--i": index - 6 }}
+              onMouseDown={() => handleMouseDown(image)}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
+            >
+              <img src={`/cards/${image}`} alt={`Card ${image}`} />
+            </div>
+          ))}
         </div>
-      ))}
-      
-    </div>
-
-    <div className="dl-hold-note">
-      {isHovered && (
-        <p>Click and hold the correct card to proceed!</p>
-      )}
-    </div>
-
-    </div>
-  );
+    
+        <div className="dl-hold-note">
+          {isHovered && (
+            <p>Click and hold the correct card to proceed!</p>
+          )}
+        </div>
+        </div>
+      );
 };
 
-export default PlayingCards;
+export default DL_Media;

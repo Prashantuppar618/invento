@@ -23,40 +23,50 @@ const cardImages = [
     "1.png": "/media-club",
   };
 
-const ML_FineArts = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleClick = (image) => {
-    window.location.href = eventLinks[image]; // Redirect on click
-  };
-
-  return (
-    <div className="ml-cardCon">
-    <div 
-      className="ml-stack-container" 
-      onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {cardImages.map((image, index) => (
-        <div
-          className="ml-stack-card"
-          key={index}
-          style={{ "--i": index - 6 }}
-          onMouseDown={() => handleMouseDown(image)}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
-        >
-          <img src={`/cards/${image}`} alt={`Card ${image}`} />
-        </div>
-      ))}
-    </div>
-    <div className="ml-hold-note">
-      {isHovered && (
-        <p>Click and hold the correct card to proceed!</p>
-      )}
-    </div>
-    </div>
-  );
+const ML_Sports = () => {
+  const [holdTimer, setHoldTimer] = useState(null);
+              const [isHovered, setIsHovered] = useState(false);
+            
+              const handleMouseDown = (image) => {
+                const timer = setTimeout(() => {
+                  window.location.href = eventLinks[image]; // Redirect after 2s hold
+                }, 1500);
+                setHoldTimer(timer);
+              };
+            
+              const handleMouseUp = () => {
+                if (holdTimer) {
+                  clearTimeout(holdTimer); // Cancel redirection if released early
+                }
+              };
+          
+            return (
+              <div className="ml-cardCon">
+              <div 
+                className="ml-stack-container" 
+                onMouseEnter={() => setIsHovered(true)} 
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                {cardImages.map((image, index) => (
+                  <div
+                    className="ml-stack-card"
+                    key={index}
+                    style={{ "--i": index - 6 }}
+                    onMouseDown={() => handleMouseDown(image)}
+                    onMouseUp={handleMouseUp}
+                    onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
+                  >
+                    <img src={`/cards/${image}`} alt={`Card ${image}`} />
+                  </div>
+                ))}
+              </div>
+              <div className="ml-hold-note">
+                {isHovered && (
+                  <p>Click and hold the correct card to proceed!</p>
+                )}
+              </div>
+              </div>
+        );
 };
 
-export default ML_FineArts;
+export default ML_Sports;
