@@ -31,9 +31,11 @@ const Banner = () => {
           </div>
           <div className="themeDesc">
             <h2 className="theme">
-              Carnival Theme Description with dates Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Nemo maiores vitae a corporis quis iure sint velit debitis quaerat.
-              Accusantium, voluptas aliquid tempore mollitia praesentium maxime voluptatem? Beatae, consequatur provident.
+              Welcome to INVENTO 2025
+              -‘smiles in the spotlight, secrets in the shadow ‘
+              Step into a world where imagination knows no bounds! INVENTO 2025 is more than just a fest—it’s a grand spectacle of creativity, technology, and culture, woven together into an unforgettable experience. This year, we bring you "Eclipsed Carnival" a theme that explores the contrast between light and shadow, joy and mystery, tradition and innovation.
+
+              From electrifying performances and thrilling competitions to groundbreaking innovations and immersive experiences, INVENTO 2025 promises to be a fusion of energy, passion, and brilliance. Get ready to unleash your talents, embrace the extraordinary, and be part of a celebration like never before!
             </h2>
           </div>
         </div>

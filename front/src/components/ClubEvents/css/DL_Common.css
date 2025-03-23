@@ -3,10 +3,14 @@
 
 /* Main Container */
 .dl-cardCon {
-    background-color: red;
+    background-image: url("/cards_back.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(1.2);
     width: 100vw;
     height: 100vh;
-    overflow: hidden; /* Prevents scrolling */
+    overflow: hidden;
+    /* Prevents scrolling */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +23,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1200px; /* Adds depth */
-    overflow: hidden; /* Ensures no extra scrolling */
+    perspective: 1200px;
+    /* Adds depth */
+    overflow: hidden;
+    /* Ensures no extra scrolling */
 }
 
 /* Individual Card */
@@ -29,7 +35,8 @@
     width: 240px;
     height: 320px;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.2);
+    /* Glassmorphism effect */
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
@@ -59,8 +66,10 @@
 
 /* Click Effect: Cards pop slightly */
 .dl-stack-container .dl-stack-card:active {
-    background: rgba(255, 255, 255, 0.2); /* Transparent background */
-    backdrop-filter: blur(10px); /* Apply blur */
+    background: rgba(255, 255, 255, 0.2);
+    /* Transparent background */
+    backdrop-filter: blur(10px);
+    /* Apply blur */
     transform: rotate(calc(var(--i) * 0deg)) translate(calc(var(--i) * 30px), -60px) scale(1.2);
     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.4);
     z-index: 2;
@@ -70,14 +79,22 @@
 .dl-stack-container .dl-stack-card:hover {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 100px 100px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 204, 255, 0.6);
-    
+
 }
 
 /* Floating Effect */
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-5px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .dl-stack-container {
@@ -86,9 +103,17 @@
 
 /* Tilt Effect */
 @keyframes tilt {
-    0% { transform: rotateY(-5deg) rotateX(8deg); }
-    50% { transform: rotateY(5deg) rotateX(-8deg); }
-    100% { transform: rotateY(-5deg) rotateX(8deg); }
+    0% {
+        transform: rotateY(-5deg) rotateX(8deg);
+    }
+
+    50% {
+        transform: rotateY(5deg) rotateX(-8deg);
+    }
+
+    100% {
+        transform: rotateY(-5deg) rotateX(8deg);
+    }
 }
 
 .dl-stack-container:hover {
@@ -107,17 +132,17 @@
     left: 50%;
     transform: translateX(-50%);
     animation: fadeIn 1s ease-in-out;
-  }
+}
 
-  
-  @keyframes fadeIn {
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateX(-50%) translateY(10px);
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
     }
+
     to {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
     }
-  }
-  
+}

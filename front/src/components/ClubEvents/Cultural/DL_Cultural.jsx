@@ -42,30 +42,30 @@ const DL_Cultural = () => {
 
   return (
     <div className="dl-cardCon">
-    <div 
-      className="dl-stack-container" 
-      onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {cardImages.map((image, index) => (
-        <div
-          className="dl-stack-card"
-          key={index}
-          style={{ "--i": index - 6 }}
-          onMouseDown={() => handleMouseDown(image)}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
-        >
-          <img src={`/Cultural/${image}`} alt={`Card ${image}`} />
-        </div>
-      ))}
-    </div>
+      <div
+        className="dl-stack-container"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {cardImages.map((image, index) => (
+          <div
+            className="dl-stack-card"
+            key={index}
+            style={{ "--i": index - 6 }}
+            onMouseDown={() => handleMouseDown(image)}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
+          >
+            <img src={`/Cultural/${image}`} alt={`Card ${image}`} />
+          </div>
+        ))}
+      </div>
 
-    <div className="dl-hold-note">
-      {isHovered && (
-        <p>Click and hold the correct card to proceed!</p>
-      )}
-    </div>
+      <div className="dl-hold-note">
+        {isHovered && (
+          <p>Click and hold the correct card to proceed!</p>
+        )}
+      </div>
     </div>
   );
 };

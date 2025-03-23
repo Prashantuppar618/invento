@@ -1,7 +1,7 @@
 /* ============================
    Global Styles (Mobile-First)
    ============================ */
-   /* body {
+/* body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
@@ -17,16 +17,27 @@
 /* ============================
    Fireworks Animation
    ============================ */
+.event_back {
+    width: 100%;
+    height: 100%;
+    background-image: url("/event_back_img.jpeg");
+    background-size: cover;
+    margin-top: 0;
+    filter: brightness(1.3);
+}
+
 @keyframes firework {
     0% {
         transform: translate(var(--x), var(--initialY));
         width: var(--initialSize);
         opacity: 10;
     }
+
     50% {
         width: 0.5vmin;
         opacity: 10;
     }
+
     100% {
         width: var(--finalSize);
         opacity: 0;
@@ -36,218 +47,227 @@
 /* ============================
    Firework Base Styles
    ============================ */
-   .firework,
-   .firework::before,
-   .firework::after
-   {
-     --initialSize: 0.5vmin;
-     --finalSize: 55vmin;
-     --particleSize: 0.3vmin;
-     --color1: yellow;
-     --color2: khaki;
-     --color3: white;
-     --color4: lime;
-     --color5: gold;
-     --color6: mediumseagreen;
-     --y: -30vmin;
-     --x: -50%;
-     --initialY: 60vmin;
-     content: "";
-     animation: firework 2.5s infinite;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, var(--y));
-     width: var(--initialSize);
-     aspect-ratio: 1;
-     filter: brightness(4) drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+.firework,
+.firework::before,
+.firework::after {
+    --initialSize: 0.5vmin;
+    --finalSize: 55vmin;
+    --particleSize: 0.3vmin;
+    --color1: yellow;
+    --color2: khaki;
+    --color3: white;
+    --color4: lime;
+    --color5: gold;
+    --color6: mediumseagreen;
+    --y: -30vmin;
+    --x: -50%;
+    --initialY: 60vmin;
+    content: "";
+    animation: firework 2.5s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, var(--y));
+    width: var(--initialSize);
+    aspect-ratio: 1;
+    filter: brightness(4) drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
     animation: firework 2.5s infinite, twinkle 0.3s infinite alternate;
 
-     background: 
-       
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 0%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 100%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 100%,
-      
-       
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%,
-       radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
-       radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
-       radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
-       
-       /* bottom right */
-       radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80% 90%,
-       radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 90% 70%,
-       radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%,
-       radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
-       radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
-       
-       /* bottom left */
-       radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22% 90%,
-       radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 70%,
-       radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 10% 60%,
-       radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%,
-       radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
-       radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
-       
-       /* top left */
-       radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80% 10%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
-       radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 90% 23%,
-       radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 100% 43%,
-       radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%,
-       radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
-       radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
-       
-       /* top right */
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22% 14%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 34%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 10% 29%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 31% 37%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 28% 7%,
-       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 13% 42%
-       ;
-     background-size: var(--initialSize) var(--initialSize);
-     background-repeat: no-repeat;
-   }
-   
-   .firework::before {
-     --x: -50%;
-     --y: -50%;
-     --initialY: -50%;
-   /*   transform: translate(-20vmin, -2vmin) rotate(40deg) scale(1.3) rotateY(40deg); */
-     transform: translate(-50%, -50%) rotate(40deg) scale(1.3) rotateY(40deg);
-   /*   animation: fireworkPseudo 2s infinite; */
-   }
-   
-   .firework::after {
-     --x: -50%;
-     --y: -50%;
-     --initialY: -50%;
-   /*   transform: translate(44vmin, -50%) rotate(170deg) scale(1.15) rotateY(-30deg); */
-     transform: translate(-50%, -50%) rotate(170deg) scale(1.15) rotateY(-30deg);
-   /*   animation: fireworkPseudo 2s infinite; */
-   }
-   
-   .firework:nth-child(2) {
-     --x: 30vmin;
-     animation-delay: -0.2s; /* Faster */
-   }
-   
-   .firework:nth-child(2),
-   .firework:nth-child(2)::before,
-   .firework:nth-child(2)::after {
-     --color1: pink;
-     --color2: violet;
-     --color3: fuchsia;
-     --color4: orchid;
-     --color5: plum;
-     --color6: lavender;  
-     --finalSize: 40vmin;
-     left: 30%;
-     top: 60%;
-     animation-delay: -0.25s;
-   }
-   
-   .firework:nth-child(3) {
-     --x: -30vmin;
-     --y: -50vmin;
-     animation-delay: -0.3s; /* Faster */
-   }
-   
-   .firework:nth-child(3),
-   .firework:nth-child(3)::before,
-   .firework:nth-child(3)::after {
-     --color1: cyan;
-     --color2: lightcyan;
-     --color3: lightblue;
-     --color4: PaleTurquoise;
-     --color5: SkyBlue;
-     --color6: lavender;
-     --finalSize: 35vmin;
-     left: 70%;
-     top: 60%;
-     animation-delay: -0.4s;
-   }
-   
-   .firework:nth-child(4) {
-     --x: 20vmin;
-     --y: -40vmin;
-     animation-delay: -0.5s; /* Faster */
-   }
-   
-   .firework:nth-child(4),
-   .firework:nth-child(4)::before,
-   .firework:nth-child(4)::after {
-     --color1: red;
-     --color2: orange;
-     --color3: darkorange;
-     --color4: tomato;
-     --color5: coral;
-     --color6: salmon;
-     --finalSize: 38vmin;
-     left: 50%;
-     top: 30%;
-     animation-delay: -0.4s;
-   }
-   
-   .firework:nth-child(5) {
-   --x: 200vmin;
-   --y: 20vmin;
-   
-   animation-delay: -0.5s; /* Faster */
-   }
-   
-   .firework:nth-child(5),
-   .firework:nth-child(5)::before,
-   .firework:nth-child(5)::after {
-   --color1: cyan;
-   --color2: lightblue;
-   --color3: deepskyblue;
-   --color4: dodgerblue;
-   --color5: royalblue;
-   --color6: blue;
-   --finalSize: 40vmin; /* Slightly larger explosion */
-   left: 70%;
-   top: 30%;
-   animation-delay: -0.4s;
-   }
-   
-   .firework:nth-child(6) {
-   --x: -600vmin; /* Move left from right side */
-   --y: 20vmin;
-   
-   }
-   
-   .firework:nth-child(6),
-   .firework:nth-child(6)::before,
-   .firework:nth-child(6)::after {
-   --color1: cyan;
-   --color2: lightblue;
-   --color3: deepskyblue;
-   --color4: dodgerblue;
-   --color5: royalblue;
-   --color6: blue;
-   --finalSize: 42vmin; /* Slightly larger explosion */
-   right: -200%; /* Start from the right */
-   top: 30%;
-   animation-delay: -0.4s; /* Faster */
-   
-   }
+    background:
+
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 0%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 100%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 100%,
+
+
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%,
+        radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
+        radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
+        radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
+
+        /* bottom right */
+        radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80% 90%,
+        radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 90% 70%,
+        radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%,
+        radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
+        radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
+
+        /* bottom left */
+        radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22% 90%,
+        radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 70%,
+        radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 10% 60%,
+        radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%,
+        radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
+        radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
+
+        /* top left */
+        radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80% 10%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
+        radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 90% 23%,
+        radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 100% 43%,
+        radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%,
+        radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
+        radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
+
+        /* top right */
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22% 14%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 34%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 10% 29%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 31% 37%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 28% 7%,
+        radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 13% 42%;
+    background-size: var(--initialSize) var(--initialSize);
+    background-repeat: no-repeat;
+}
+
+.firework::before {
+    --x: -50%;
+    --y: -50%;
+    --initialY: -50%;
+    /*   transform: translate(-20vmin, -2vmin) rotate(40deg) scale(1.3) rotateY(40deg); */
+    transform: translate(-50%, -50%) rotate(40deg) scale(1.3) rotateY(40deg);
+    /*   animation: fireworkPseudo 2s infinite; */
+}
+
+.firework::after {
+    --x: -50%;
+    --y: -50%;
+    --initialY: -50%;
+    /*   transform: translate(44vmin, -50%) rotate(170deg) scale(1.15) rotateY(-30deg); */
+    transform: translate(-50%, -50%) rotate(170deg) scale(1.15) rotateY(-30deg);
+    /*   animation: fireworkPseudo 2s infinite; */
+}
+
+.firework:nth-child(2) {
+    --x: 30vmin;
+    animation-delay: -0.2s;
+    /* Faster */
+}
+
+.firework:nth-child(2),
+.firework:nth-child(2)::before,
+.firework:nth-child(2)::after {
+    --color1: pink;
+    --color2: violet;
+    --color3: fuchsia;
+    --color4: orchid;
+    --color5: plum;
+    --color6: lavender;
+    --finalSize: 40vmin;
+    left: 30%;
+    top: 60%;
+    animation-delay: -0.25s;
+}
+
+.firework:nth-child(3) {
+    --x: -30vmin;
+    --y: -50vmin;
+    animation-delay: -0.3s;
+    /* Faster */
+}
+
+.firework:nth-child(3),
+.firework:nth-child(3)::before,
+.firework:nth-child(3)::after {
+    --color1: cyan;
+    --color2: lightcyan;
+    --color3: lightblue;
+    --color4: PaleTurquoise;
+    --color5: SkyBlue;
+    --color6: lavender;
+    --finalSize: 35vmin;
+    left: 70%;
+    top: 60%;
+    animation-delay: -0.4s;
+}
+
+.firework:nth-child(4) {
+    --x: 20vmin;
+    --y: -40vmin;
+    animation-delay: -0.5s;
+    /* Faster */
+}
+
+.firework:nth-child(4),
+.firework:nth-child(4)::before,
+.firework:nth-child(4)::after {
+    --color1: red;
+    --color2: orange;
+    --color3: darkorange;
+    --color4: tomato;
+    --color5: coral;
+    --color6: salmon;
+    --finalSize: 38vmin;
+    left: 50%;
+    top: 30%;
+    animation-delay: -0.4s;
+}
+
+.firework:nth-child(5) {
+    --x: 200vmin;
+    --y: 20vmin;
+
+    animation-delay: -0.5s;
+    /* Faster */
+}
+
+.firework:nth-child(5),
+.firework:nth-child(5)::before,
+.firework:nth-child(5)::after {
+    --color1: cyan;
+    --color2: lightblue;
+    --color3: deepskyblue;
+    --color4: dodgerblue;
+    --color5: royalblue;
+    --color6: blue;
+    --finalSize: 40vmin;
+    /* Slightly larger explosion */
+    left: 70%;
+    top: 30%;
+    animation-delay: -0.4s;
+}
+
+.firework:nth-child(6) {
+    --x: -600vmin;
+    /* Move left from right side */
+    --y: 20vmin;
+
+}
+
+.firework:nth-child(6),
+.firework:nth-child(6)::before,
+.firework:nth-child(6)::after {
+    --color1: cyan;
+    --color2: lightblue;
+    --color3: deepskyblue;
+    --color4: dodgerblue;
+    --color5: royalblue;
+    --color6: blue;
+    --finalSize: 42vmin;
+    /* Slightly larger explosion */
+    right: -200%;
+    /* Start from the right */
+    top: 30%;
+    animation-delay: -0.4s;
+    /* Faster */
+
+}
 
 /* ============================
    Background and Overlay
    ============================ */
-   .fireworks-background {
+.fireworks-background {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
     background-image: url('/media.webp');
     background-size: cover;
     background-position: center;
@@ -269,7 +289,7 @@
 /* ============================
    Event Info Section
    ============================ */
-   /* Apply a glassmorphism effect */
+/* Apply a glassmorphism effect */
 .event-info {
     position: relative;
     /* background: rgba(255, 255, 255, 0.15); */
@@ -301,7 +321,7 @@
     overflow-y: auto;
     padding-right: 10px;
     scrollbar-width: thin;
-    color:white;
+    color: white;
     scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
 }
 
@@ -360,7 +380,8 @@
 }
 
 /* See More & Register Buttons */
-.see-more-btn, .register-btn {
+.see-more-btn,
+.register-btn {
     padding: 14px 35px;
     font-size: 16px;
     cursor: pointer;
@@ -423,7 +444,8 @@
     margin-bottom: 8px;
 }
 
-.more-text p, .more-text ul {
+.more-text p,
+.more-text ul {
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -449,6 +471,7 @@
         opacity: 0;
         transform: scale(0.9);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -460,6 +483,7 @@
         opacity: 0;
         transform: translateY(10px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -472,7 +496,8 @@
 /* ============================
    Media Queries for Desktop
    ============================ */
-   @media (min-width: 768px) {
+@media (min-width: 768px) {
+
     /* Adjust fireworks for larger screens */
     .firework {
         --initialSize: 0.5vmin;
@@ -486,10 +511,13 @@
 
     /* Event Info Section (Larger Screens) */
     .event-info {
-        max-width: 80%; /* Increase width as needed */
-        width: 900px; /* You can set a fixed width */
+        max-width: 80%;
+        /* Increase width as needed */
+        width: 900px;
+        /* You can set a fixed width */
         padding: 20px;
-        min-height: 250px; /* Reduce min-height for desktop */
+        min-height: 250px;
+        /* Reduce min-height for desktop */
         border-radius: 15px;
     }
 
@@ -520,8 +548,10 @@
     }
 
     .event-info {
-        padding: 15px;  /* Adjust padding */
-        min-height: 220px; /* Further reduce height for larger screens */
+        padding: 15px;
+        /* Adjust padding */
+        min-height: 220px;
+        /* Further reduce height for larger screens */
     }
 
     .event-title {
@@ -544,10 +574,12 @@
 /* ============================
    Media Queries for Tablets
    ============================ */
-   @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     .event-info {
-        width: 90%; /* Adjust width for tablets */
-        min-height: 600px; /* Reduce height */
+        width: 90%;
+        /* Adjust width for tablets */
+        min-height: 600px;
+        /* Reduce height */
         padding: 15px;
     }
 
@@ -596,7 +628,8 @@
         padding: 4px;
     }
 
-    .see-more-btn, .register-btn {
+    .see-more-btn,
+    .register-btn {
         padding: 12px 30px;
         font-size: 14px;
     }
@@ -632,9 +665,9 @@
         font-size: 0.85rem;
     }
 
-    .see-more-btn, .register-btn {
+    .see-more-btn,
+    .register-btn {
         padding: 10px 25px;
         font-size: 13px;
     }
 }
-

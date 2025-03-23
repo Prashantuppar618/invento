@@ -40,66 +40,68 @@ function EventPage({ event }) {
   }, []);
 
   return (
-    <div
-      className="fireworks-background"
-      style={{
-        backgroundImage: `url(${event.backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <Firework />
-      
+    <div className="event_back">
+      <div
+        className="fireworks-background"
+        style={{
+          backgroundImage: `url(${event.backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <Firework />
 
-      <div className="event-info">
-        <h1 className="event-title">{event.title}</h1>
 
-        <div className="event-content">
-          <p className="event-description">{event.description}</p>
+        <div className="event-info">
+          <h1 className="event-title">{event.title}</h1>
 
-          {/* "See More" Section */}
-          <div className="event-moreinfo">
-            <button onClick={() => setShowMore(!showMore)} className="see-more-btn">
-              {showMore ? "See Less" : "See More"}
-            </button>
+          <div className="event-content">
+            <p className="event-description">{event.description}</p>
 
-            <div className={`more-text ${showMore ? "show" : ""}`}>
-              <h2 className="typing-text">Event Details</h2>
+            {/* "See More" Section */}
+            <div className="event-moreinfo">
+              <button onClick={() => setShowMore(!showMore)} className="see-more-btn">
+                {showMore ? "See Less" : "See More"}
+              </button>
 
-              <div className="sentence-container">
-                <p className="fade-sentence" style={{ "--delay": 1 }}>
-                  <strong>Event Type:</strong> {event.type}
-                </p>
-                <p className="fade-sentence" style={{ "--delay": 2 }}>
-                  <strong>Amount:</strong> Rs {event.amount}
-                </p>
-                <p className="fade-sentence" style={{ "--delay": 3 }}>
-                  <strong>Team Size:</strong> {event.teamSize} members
+              <div className={`more-text ${showMore ? "show" : ""}`}>
+                <h2 className="typing-text">Event Details</h2>
+
+                <div className="sentence-container">
+                  <p className="fade-sentence" style={{ "--delay": 1 }}>
+                    <strong>Event Type:</strong> {event.type}
+                  </p>
+                  <p className="fade-sentence" style={{ "--delay": 2 }}>
+                    <strong>Amount:</strong> Rs {event.amount}
+                  </p>
+                  <p className="fade-sentence" style={{ "--delay": 3 }}>
+                    <strong>Team Size:</strong> {event.teamSize} members
+                  </p>
+                </div>
+
+                <h2 className="typing-text">Event Rules:</h2>
+                <ul className="sentence-container">
+                  {event.rules.map((rule, index) => (
+                    <li key={index} className="fade-sentence" style={{ "--delay": index + 4 }}>
+                      {rule}
+                    </li>
+                  ))}
+                </ul>
+
+                <h2 className="typing-text">Contact:</h2>
+                <p className="fade-sentence" style={{ "--delay": event.rules.length + 4 }}>
+                  📞 {event.contact}
                 </p>
               </div>
-
-              <h2 className="typing-text">Event Rules:</h2>
-              <ul className="sentence-container">
-                {event.rules.map((rule, index) => (
-                  <li key={index} className="fade-sentence" style={{ "--delay": index + 4 }}>
-                    {rule}
-                  </li>
-                ))}
-              </ul>
-
-              <h2 className="typing-text">Contact:</h2>
-              <p className="fade-sentence" style={{ "--delay": event.rules.length + 4 }}>
-                📞 {event.contact}
-              </p>
             </div>
-          </div>
 
-          {/* Register Button */}
-          <div className="event-register">
-            <a href={event.eventLink} target="_blank" rel="noopener noreferrer">
-              <button className="register-btn">Register</button>
-            </a>
+            {/* Register Button */}
+            <div className="event-register">
+              <a href={event.eventLink} target="_blank" rel="noopener noreferrer">
+                <button className="register-btn">Register</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
