@@ -62,10 +62,10 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000); // Simulate loading delay
+    setTimeout(() => setLoading(false), 1500); // Simulate loading delay
   }, []);
 
-  // if (loading) return <Loading />;
+  if (loading) return <Loading />;
 
   {/* CDC */ }
   const carnivalFest = {

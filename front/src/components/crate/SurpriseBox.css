@@ -298,6 +298,7 @@ body {
 
     .pdf-container {
         height: 200px;
+        margin-left: -60px;
     }
 
     .download-btn {
@@ -311,11 +312,23 @@ body {
     .present {
         margin-right: 30px;
     }
+
+    .pdf-container {
+        height: 200px;
+        width: 400px;
+        margin-left: -50px;
+    }
 }
 
 @media (max-width: 510px) {
     .present {
         margin-right: 40px;
+    }
+
+    .pdf-container {
+        height: 180px;
+        width: 370px;
+        margin-left: -30px;
     }
 }
 
@@ -323,17 +336,35 @@ body {
     .present {
         margin-right: 50px;
     }
+
+    .pdf-container {
+        height: 180px;
+        width: 370px;
+        margin-left: -20px;
+    }
 }
 
 @media (max-width: 490px) {
     .present {
         margin-right: 65px;
     }
+
+    .pdf-container {
+        height: 180px;
+        width: 370px;
+        margin-left: -10px;
+    }
 }
 
 @media (max-width: 480px) {
     .present {
         margin-right: 80px;
+    }
+
+    .pdf-container {
+        height: 180px;
+        width: 370px;
+        margin-left: -10px;
     }
 }
 
@@ -390,11 +421,54 @@ body {
         height: 60px;
         width: 250px;
     }
+
+    .pdf-container {
+        height: 180px;
+        width: 330px;
+        margin-left: 30px;
+    }
 }
 
 
 @media (max-width: 370px) {
     .present {
-        margin-right: 135px;
+        margin-right: 150px;
+    }
+
+    .pdf-container {
+        height: 180px;
+        width: 300px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 369px) {
+    .present {
+        margin-right: 185px;
+    }
+}
+
+@media (max-width: 360px) {
+    .present {
+        margin-right: 195px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .present {
+        margin-right: 205px;
+    }
+}
+
+@media (max-width: 340px) {
+    .present {
+        margin-right: 215px;
+    }
+
+    .pdf-container {
+        height: 180px;
+        width: 250px;
+        margin-left: 45px;
     }
 }
