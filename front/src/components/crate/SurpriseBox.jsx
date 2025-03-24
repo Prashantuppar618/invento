@@ -12,16 +12,16 @@ const SurpriseBox = () => {
   return (
     <div ref={containerRef} className="surprise-container">
       {/* Crosshair Effect */}
-      {!showAnimation && 
+      {!showAnimation &&
         <Crosshair containerRef={containerRef} color="#ffffff" className="crosshair" />
       }
 
-      <div 
-        className="present" 
+      <div
+        className="present"
         onMouseEnter={() => {
           setShowPdf(true);
           setShowAnimation(true);
-        }} 
+        }}
         onMouseLeave={() => {
           setShowPdf(false);
           setShowAnimation(false);
@@ -46,14 +46,14 @@ const SurpriseBox = () => {
           <span></span>
         </div>
 
-        
+
       </div>
 
-        {showAnimation && (
-          <div className="fullscreen-gif">
-             <img src="/celebrations.gif" alt="Celebration Animation" />
-          </div>
-        )}
+      {showAnimation && (
+        <div className="fullscreen-gif">
+          <img src="/celebrations.gif" alt="Celebration Animation" />
+        </div>
+      )}
     </div>
   );
 };

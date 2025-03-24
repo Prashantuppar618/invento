@@ -1,219 +1,107 @@
-/* Mobile-first design */
+/* General Footer Styling */
 .footer {
-  background-color: #000;
-  color: #fff;
-  padding: 2rem 1rem;
-  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-/* Grid for content */
+/* Grid for better layout on larger screens */
 .footer-grid {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  text-align: center;
+  align-items: center;
+  gap: 20px;
 }
 
-/* Logo and Description */
+/* Logo and Title */
 .footer-logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.footer-logo svg {
-  color: #f59e0b;
-}
-
-.footer-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.footer-description {
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  color: #ccc;
-}
-
-/* Contact Info */
-.contact-info {
-  display: flex;
   flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
-.footer-contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Social Media Links */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-.social-link {
-  color: #f59e0b;
-  transition: transform 0.3s ease;
-}
-
-.social-link:hover {
-  color: #fff;
-  transform: scale(1.1);
-}
-
-/* Copyright Section */
-.copyright {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #777;
-  width: 90%;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .logo-image {
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Maintain aspect ratio */
-  object-fit: contain;
+  width: 50px;
+  height: auto;
 }
 
-.name {
-  margin-right: 10px; /* Adjust spacing between names */
+/* Description Text */
+.footer-description {
+  font-size: 14px;
+  margin-top: 5px;
 }
 
+/* Contact Section */
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact-item,
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centers the text */
+  gap: 8px;
+}
+
+/* Social Media Links */
+.social-links {
+  margin-top: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
+.social-link:hover {
+  color: #f59e0b;
+}
+
+/* Copyright Section */
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Name Container */
 .name-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Adds space between names */
+  justify-content: center;
+  gap: 12px;
+  /* Space between names */
+  margin: 10px 0;
 }
 
 .name a {
+  color: purple;
   text-decoration: none;
-  color: #007bff; /* Blue color for links */
+  font-weight: bold;
 }
 
-@media (max-width: 600px) {
-  .name-container {
-    flex-direction: column;
-    align-items: center; /* Center align names */
-    margin-right: 40px;
-  }
-}
-
-
-
-
-/* Responsive Design for Laptops */
-@media (min-width: 768px) {
-  .footer-grid {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .text-center {
-    text-align: left;
-  }
-
-  .footer-logo {
-    justify-content: flex-start;
-  }
-
-  .contact-info {
-    align-items: flex-start;
-  }
-
-  .social-links {
-    justify-content: flex-start;
-  }
-}
-
-@media (max-width: 550px) {
-  .footer-container{
-    margin-right: 30px;
-  }
-  
-}
-
-@media (max-width: 510px) {
-  .footer-container{
-    margin-right: 30px;
-  }
-
-  .text-center {
-    margin-right: 30px;
-  }
-  
-}
-
-
-@media (max-width: 480px) {
-  .footer-container{
-    margin-right: 70px;
-  }
-
-  .text-center {
-    margin-right: 70px;
-  }
-  
-}
-
-
-@media (max-width: 450px) {
-  .footer-container{
-    margin-right: 80px;
-  }
-
-  .text-center {
-    margin-right: 80px;
-  }
-  
-}
-
-@media (max-width: 400px) {
-  .footer-container{
-    margin-right: 90px;
-  }
-
-  .text-center {
-    margin-right: 90px;
-  }
-  
-}
-
-
-@media (max-width: 380px) {
-  .footer-container{
-    margin-right: 100px;
-  }
-
-  .text-center {
-    margin-right: 100px;
-  }
-}
-
-
-@media (max-width: 360px) {
-  .footer-container{
-    margin-right: 110px;
-  }
-
-  .text-center {
-    margin-right: 110px;
-  }
+.name a:hover {
+  text-decoration: underline;
+  color: #c084fc;
+  /* Light purple on hover */
 }
