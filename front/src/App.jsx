@@ -649,7 +649,7 @@ function App() {
       "Can you handle the heat when the mic goes live? Step into the thrilling world of media and entertainment! In this Circus of scandals, teams will take on the roles of celebrities and journalists—each with a mission. With fame on the line and the media in pursuit, will you control the narrative, or will the headlines write themselves? The stakes are high, and the spotlight is relentless—let the showdown begin.",
     backgroundImage: "/media.webp",
     type: "Team",
-    amount: 400,
+    amount: 300,
     teamSize: 2,
     rules: [
       "Each team has two members—one celebrity and one journalist (roles must be decided before the event).",
@@ -670,7 +670,7 @@ function App() {
       "Step right up to the carnival of the mind, where every word is a weapon and every argument a challenge. In this eerie realm, logic is twisted and ideas collide, pushing you to defend, confront, and captivate. Let your intellect shine and your wit cut through the darkness—here, only the sharpest minds will survive, and the game is never as it seems. Welcome to the carnival, where every turn brings new tests and every debate shifts the very fabric of truth.",
     backgroundImage: "/debate.webp",
     type: "Team",
-    amount: 400,
+    amount: 300,
     teamSize: 2,
     rules: [
       "The short film should not exceed 6 minutes in duration including titles and credits.",
@@ -692,7 +692,7 @@ function App() {
       "Think you can sell anything with creativity and persuasion? Ad Mad is your chance to prove it! Step into the world of advertising and showcase your marketing brilliance by crafting the most innovative and engaging ad for your chosen product.",
     backgroundImage: "/admad.webp", // Update with actual image path
     type: "Team",
-    amount: 800, // Assuming no entry fee, update if needed
+    amount: 500, // Assuming no entry fee, update if needed
     teamSize: "3-6 members",
     rules: [
 
