@@ -8,7 +8,7 @@ const Navbar = () => {
                 <img src={Logo} className="navLogo" alt="Invento_Logo" />
             </div>
             <ul className="nav-links">
-                {['Home', 'Rulebook', 'Map', 'Contact'].map((text, index) => (
+                {['Home', 'Rulebook', 'Contact'].map((text, index) => (
                     <li key={index}>
                         <a href={text === 'Home' ? '/' : `/${text.toLowerCase()}`}>{text}</a>
                     </li>
