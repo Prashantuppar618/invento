@@ -3,7 +3,7 @@ import "../css/DL_Common.css";
 
 const cardImages = [
   "13.png", "12.png", "11.png", "10.png", "9.png", "8.png", "7.png",
-  "6.png", "5.png", "4.png", "3.png", "2.jpg", "1.png"
+  "6.png", "5.png", "4.png", "3.png", "2.png", "1.png"
 ];
 
 // Event mapping for each card (update links as needed)
@@ -19,7 +19,7 @@ const eventLinks = {
   "5.png": "/specials",
   "4.png": "/specials",
   "3.png": "/specials",
-  "2.jpg": "/Specials/The-Great-Circus-Run",
+  "2.png": "/Specials/The-Great-Circus-Run",
   "1.png": "/specials",
 };
 
