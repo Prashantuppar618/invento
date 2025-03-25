@@ -56,7 +56,7 @@
     transition: transform 0.5s ease;
 }
 
-.ml-cardCon:hover .ml-stack-container {
+.ml-cardCon .ml-stack-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
@@ -69,7 +69,7 @@
 }
 
 
-.ml-cardCon:hover .ml-stack-card {
+.ml-cardCon .ml-stack-card {
     position: static;
     transform: none;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -102,7 +102,7 @@
 }
 
 /* @media (max-width:430px) {
-    .ml-cardCon:hover .ml-stack-container{
+    .ml-cardCon .ml-stack-container{
         transform: translateY(2050px);
     }
 } */
