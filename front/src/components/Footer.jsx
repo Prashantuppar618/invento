@@ -68,8 +68,8 @@ const Footer = () => {
         <div className="copyright">
           © {new Date().getFullYear()} Made with ♡ by -
           <div className="name-container">
-            <span className="name"><a href="#" target="_blank" rel="noopener noreferrer">Pratik</a></span>
             <span className="name"><a href="https://www.linkedin.com/in/prashant-uppar-soft89" target="_blank" rel="noopener noreferrer">Prashant</a></span>
+            <span className="name"><a href="#" target="_blank" rel="noopener noreferrer">Pratik</a></span>
             <span className="name"><a href="https://www.linkedin.com/in/prathmesh-k" target="_blank" rel="noopener noreferrer">Prathamesh</a></span>
             <span className="name"><a href="#" target="_blank" rel="noopener noreferrer">Amaresh</a></span>
             <span className="name"><a href="https://www.linkedin.com/in/umarani-bharamanaikar-478107357" target="_blank" rel="noopener noreferrer">Uma</a></span>
@@ -77,9 +77,6 @@ const Footer = () => {
           </div>
           All rights reserved.
         </div>
-
-
-
       </div>
     </footer>
   );

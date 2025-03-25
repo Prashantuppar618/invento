@@ -32,10 +32,11 @@ const Banner = () => {
           <div className="themeDesc">
             <h2 className="theme">
               Welcome to INVENTO 2025
-              -‘smiles in the spotlight, secrets in the shadow ‘
-              Step into a world where imagination knows no bounds! INVENTO 2025 is more than just a fest—it’s a grand spectacle of creativity, technology, and culture, woven together into an unforgettable experience. This year, we bring you "Eclipsed Carnival" a theme that explores the contrast between light and shadow, joy and mystery, tradition and innovation.
+              — “Smiles in the spotlight, secrets in the shadows”
 
-              From electrifying performances and thrilling competitions to groundbreaking innovations and immersive experiences, INVENTO 2025 promises to be a fusion of energy, passion, and brilliance. Get ready to unleash your talents, embrace the extraordinary, and be part of a celebration like never before!
+              Step into a world where imagination knows no limits! INVENTO 2025 isn’t just a fest—it’s a mesmerizing celebration of creativity, technology, and culture, crafted into an unforgettable experience. This year, we bring you "Carnival", a theme that radiates energy, excitement, and the spirit of festivity.
+
+              From electrifying performances and thrilling competitions to groundbreaking innovations and immersive experiences, INVENTO 2025 is a fusion of passion, brilliance, and boundless possibilities. Get ready to showcase your talents, embrace the extraordinary, and be part of a celebration like never before!
             </h2>
           </div>
         </div>
