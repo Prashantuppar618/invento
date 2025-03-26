@@ -334,15 +334,92 @@
     border-radius: 10px;
 }
 
-/* Animated title */
+/* -----------------------
+   Event Title (Container)
+   ----------------------- */
 .event-title {
     font-size: 2.8rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: rgb(255, 189, 47);
-    animation: fadeIn 1s ease-in-out;
+    /* Remove container animation if you prefer per-letter animations */
+    /* animation: fadeIn 1s ease-in-out;  */
 }
+
+/* -----------------------
+   Per-letter Animations
+   ----------------------- */
+.letter {
+    display: inline-block;
+    opacity: 0; /* Start hidden */
+}
+
+/* Fade from Top for individual letters */
+.fade-from-top {
+    animation: fadeFromTop 0.5s forwards;
+}
+
+@keyframes fadeFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* If needed, add other per-letter animations as well */
+/* Fade from Bottom */
+.fade-from-bottom {
+    animation: fadeFromBottom 0.5s forwards;
+}
+
+@keyframes fadeFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade from Left */
+.fade-from-left {
+    animation: fadeFromLeft 0.5s forwards;
+}
+
+@keyframes fadeFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade from Right */
+.fade-from-right {
+    animation: fadeFromRight 0.5s forwards;
+}
+
+@keyframes fadeFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 /* Event description with glowing effect */
 .event-description {
@@ -519,6 +596,7 @@
         min-height: 250px;
         /* Reduce min-height for desktop */
         border-radius: 15px;
+        
     }
 
     .event-title {

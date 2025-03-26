@@ -202,7 +202,7 @@ function App() {
     venue: "Auditorium & Portico",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Jai Sancheti-9883066256",
+    contact: "JaySancheti-9883066256",
     eventLink: "https://forms.gle/3TWxdBof3AwhcVky9"
   };
 
@@ -234,7 +234,7 @@ function App() {
     venue: "Amphi Stage",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Jai Sancheti-9883066256",
+    contact: "JaySancheti-9883066256",
     eventLink: "https://forms.gle/uH2Yj4Jadi244rzD7"
   };
 
@@ -274,7 +274,7 @@ function App() {
     venue: "Auditorium & Amphi Stage",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Jai Sancheti-9883066256",
+    contact: "JaySancheti-9883066256",
     eventLink: "https://forms.gle/XEAT6Y3VKR2NH2dw5"
   };
 
@@ -310,7 +310,7 @@ function App() {
     venue: "Main Stage",
     registration: "Online",
     teamsPerCollege: "1",
-    contact: "Jai Sancheti-9883066256",
+    contact: "JaySancheti-9883066256",
     eventLink: "https://forms.gle/kUu4F7LXCJZjnBTX6"
   };
 

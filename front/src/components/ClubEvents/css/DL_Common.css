@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap");
 
-
 /* Main Container */
 .dl-cardCon {
     background-image: url("/cards_back.jpeg");
@@ -64,12 +63,10 @@
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Click Effect: Cards pop slightly */
-.dl-stack-container .dl-stack-card:active {
+/* Active card effect: Tapped card stays up until another is tapped */
+.dl-stack-container .dl-stack-card.active {
     background: rgba(255, 255, 255, 0.2);
-    /* Transparent background */
     backdrop-filter: blur(10px);
-    /* Apply blur */
     transform: rotate(calc(var(--i) * 0deg)) translate(calc(var(--i) * 30px), -60px) scale(1.2);
     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.4);
     z-index: 2;
@@ -79,7 +76,6 @@
 .dl-stack-container .dl-stack-card:hover {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 100px 100px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 204, 255, 0.6);
-
 }
 
 /* Floating Effect */
@@ -87,11 +83,9 @@
     0% {
         transform: translateY(0px);
     }
-
     50% {
         transform: translateY(-5px);
     }
-
     100% {
         transform: translateY(0px);
     }
@@ -106,11 +100,9 @@
     0% {
         transform: rotateY(-5deg) rotateX(8deg);
     }
-
     50% {
         transform: rotateY(5deg) rotateX(-8deg);
     }
-
     100% {
         transform: rotateY(-5deg) rotateX(8deg);
     }
@@ -134,13 +126,11 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateX(-50%) translateY(10px);
     }
-
     to {
         opacity: 1;
         transform: translateX(-50%) translateY(0);

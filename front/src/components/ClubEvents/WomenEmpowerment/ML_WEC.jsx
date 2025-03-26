@@ -26,7 +26,7 @@ const eventLinks = {
 const ML_WEC = () => {
 
   return (
-    <ML_Common eventLinks={eventLinks} Club={"WomenEmpowerment"} />
+    <ML_Common eventLinks={eventLinks} Club={"WEC"} />
   );
 };
 

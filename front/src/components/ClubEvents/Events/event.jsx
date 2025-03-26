@@ -19,18 +19,42 @@ function EventPage({ event }) {
 
     const animateText = (selector, animationClass) => {
       document.querySelectorAll(selector).forEach((element) => {
-        const text = element.textContent;
+        const text = element.textContent.trim();
         element.innerHTML = "";
-
-        text.split("").forEach((char, index) => {
-          const charSpan = document.createElement("span");
-          charSpan.textContent = char === " " ? "\u00A0" : char;
-          charSpan.classList.add("letter", animationClass);
-          charSpan.style.animationDelay = `${index * 0.1}s`;
-          element.appendChild(charSpan);
+        const words = text.split(" ");
+        let globalCharCount = 0;
+    
+        words.forEach((word, wordIndex) => {
+          // Create a container for each word to keep letters together.
+          const wordSpan = document.createElement("span");
+          wordSpan.style.whiteSpace = "nowrap";
+          wordSpan.style.display = "inline-block"; // Ensures proper baseline alignment
+    
+          // Split the word into letters.
+          [...word].forEach((char) => {
+            const charSpan = document.createElement("span");
+            charSpan.textContent = char;
+            charSpan.classList.add("letter", animationClass);
+            charSpan.style.display = "inline-block";
+            charSpan.style.verticalAlign = "bottom"; // Prevents offsetting
+            // Use a global counter to maintain consistent delays across all letters.
+            charSpan.style.animationDelay = `${globalCharCount * 0.1}s`;
+            globalCharCount++;
+            wordSpan.appendChild(charSpan);
+          });
+    
+          element.appendChild(wordSpan);
+    
+          // Add a space after each word (except the last) and update delay.
+          if (wordIndex < words.length - 1) {
+            element.appendChild(document.createTextNode(" "));
+            globalCharCount++;
+          }
         });
       });
     };
+    
+    
 
 
     animateText(".event-title", "fade-from-top");
@@ -57,7 +81,7 @@ function EventPage({ event }) {
           <h1 className="event-title">{event.title}</h1>
 
           <div className="event-content">
-            <p className="event-description">{event.description}</p>
+            <p className="event-description">{event.description}<br/><br/> 📞Contact: {event.contact}</p>
 
             {/* "See More" Section */}
             <div className="event-moreinfo">

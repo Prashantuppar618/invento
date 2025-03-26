@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/DL_Common.css";
+import DL_Common from "../../common/DL_Common";
 
 const cardImages = [
     "13.png", "12.png", "11.png", "10.png", "9.png", "8.png", "7.png",
@@ -23,50 +24,9 @@ const cardImages = [
     "1.png": "/media-club",
 };
 
-const DL_Media = () => {
-   const [holdTimer, setHoldTimer] = useState(null);
-      const [isHovered, setIsHovered] = useState(false);
-    
-      const handleMouseDown = (image) => {
-        const timer = setTimeout(() => {
-          window.location.href = eventLinks[image]; // Redirect after 2s hold
-        }, 2000);
-        setHoldTimer(timer);
-      };
-    
-      const handleMouseUp = () => {
-        if (holdTimer) {
-          clearTimeout(holdTimer); // Cancel redirection if released early
-        }
-      };
-    
+const DL_Media = () => { 
       return (
-        <div className="dl-cardCon">
-        <div 
-          className="dl-stack-container" 
-          onMouseEnter={() => setIsHovered(true)} 
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          {cardImages.map((image, index) => (
-            <div
-              className="dl-stack-card"
-              key={index}
-              style={{ "--i": index - 6 }}
-              onMouseDown={() => handleMouseDown(image)}
-              onMouseUp={handleMouseUp}
-              onMouseLeave={handleMouseUp} // Ensure cancellation when moving away
-            >
-              <img src={`/Media/${image}`} alt={`Card ${image}`} />
-            </div>
-          ))}
-        </div>
-    
-        <div className="dl-hold-note">
-          {isHovered && (
-            <p>Click and hold the correct card to proceed!</p>
-          )}
-        </div>
-        </div>
+        <DL_Common eventLinks={eventLinks} Club={"Media"}></DL_Common>
       );
 };
 
