@@ -81,7 +81,7 @@ function EventPage({ event }) {
           <h1 className="event-title">{event.title}</h1>
 
           <div className="event-content">
-            <p className="event-description">{event.description}<br/><br/> 📞Contact: {event.contact}</p>
+            <p className="event-description">{event.description}<br/><br/> </p>
 
             {/* "See More" Section */}
             <div className="event-moreinfo">
@@ -114,9 +114,13 @@ function EventPage({ event }) {
                 </ul>
 
                 <h2 className="typing-text">Contact:</h2>
-                <p className="fade-sentence" style={{ "--delay": event.rules.length + 4 }}>
-                  📞 {event.contact}
-                </p>
+                <ul className="sentence-container">
+                  {event.contacts.map((contact, index) => (
+                    <li key={index} className="fade-sentence" style={{ "--delay": event.rules.length + index + 4 }}>
+                      📞 {contact.name} - {contact.phone}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 

@@ -90,7 +90,9 @@ function App() {
     venue: "Portico",
     registration: "Online (First 60 entries will be considered)",
     teamsPerCollege: "Unlimited",
-    contact: "Naveen Kittali-7022868058",
+    contacts: [
+      { name: "Naveen Kittali", phone: "7022868058" },
+    ],
     eventLink: "https://forms.gle/8VwXMa5B455GaMs19"
   };
 
@@ -122,7 +124,9 @@ function App() {
     venue: "CS Department Classroom",
     registration: "Online (First 74 entries will be considered)",
     teamsPerCollege: "Unlimited",
-    contact: "Naveen Kittali-7022868058",
+    contacts: [
+      { name: "Naveen Kittali", phone: "7022868058" },
+    ],
     eventLink: "https://forms.gle/2bTHHrBTV4Weo3z49"
   };
 
@@ -160,7 +164,9 @@ function App() {
     venue: "CS Lab",
     registration: "Online (First 40 entries will be considered)",
     teamsPerCollege: "Unlimited",
-    contact: "Naveen Kittali-7022868058",
+    contacts: [
+      { name: "Naveen Kittali", phone: "7022868058" },
+    ],
     eventLink: "https://forms.gle/ht55LkVisw2y4LdQ9"
   };
 
@@ -202,7 +208,11 @@ function App() {
     venue: "Auditorium & Portico",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "JaySancheti-9883066256",
+    contacts: [
+      { name: "Sakshi Juvekar", phone: "8296092238" },
+      { name: "Jay Sancheti", phone: "9883066256" },
+      { name: "Sakshi Patil", phone: "6366481409" }
+    ],
     eventLink: "https://forms.gle/3TWxdBof3AwhcVky9"
   };
 
@@ -234,7 +244,11 @@ function App() {
     venue: "Amphi Stage",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "JaySancheti-9883066256",
+    contacts: [
+      { name: "Sakshi Juvekar", phone: "8296092238" },
+      { name: "Jay Sancheti", phone: "9883066256" },
+      { name: "Sakshi Patil", phone: "6366481409" }
+    ],
     eventLink: "https://forms.gle/uH2Yj4Jadi244rzD7"
   };
 
@@ -274,7 +288,11 @@ function App() {
     venue: "Auditorium & Amphi Stage",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "JaySancheti-9883066256",
+    contacts: [
+      { name: "Sakshi Juvekar", phone: "8296092238" },
+      { name: "Jay Sancheti", phone: "9883066256" },
+      { name: "Sakshi Patil", phone: "6366481409" }
+    ],
     eventLink: "https://forms.gle/XEAT6Y3VKR2NH2dw5"
   };
 
@@ -310,7 +328,11 @@ function App() {
     venue: "Main Stage",
     registration: "Online",
     teamsPerCollege: "1",
-    contact: "JaySancheti-9883066256",
+    contacts: [
+      { name: "Sakshi Juvekar", phone: "8296092238" },
+      { name: "Jay Sancheti", phone: "9883066256" },
+      { name: "Sakshi Patil", phone: "6366481409" }
+    ],
     eventLink: "https://forms.gle/kUu4F7LXCJZjnBTX6"
   };
 
@@ -355,7 +377,9 @@ function App() {
     venue: "Saptarishi Hall",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Prajwal Patil-9113581092",
+    contacts: [
+      { name: "Prajwal Patil", phone: "9113581092" },
+    ],
     eventLink: "https://forms.gle/k3c2bB3bQCaCtLTm8"
   };
 
@@ -397,7 +421,9 @@ function App() {
     venue: "Saptarishi Hall",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Prajwal Patil-9113581092",
+    contacts: [
+      { name: "Prajwal Patil", phone: "9113581092" },
+    ],
     eventLink: "https://forms.gle/rawdahJRRAPmmmbK6"
   };
 
@@ -435,7 +461,9 @@ function App() {
     venue: "Amphi Stage",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Prajwal Patil-9113581092",
+    contacts: [
+      { name: "Prajwal Patil", phone: "9113581092" },
+    ],
     eventLink: "https://forms.gle/vFyURQpU6rFJEaqz5"
   };
 
@@ -474,7 +502,9 @@ function App() {
     venue: "Amphi Stage",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Prajwal Patil-9113581092",
+    contacts: [
+      { name: "Prajwal Patil", phone: "9113581092" },
+    ],
     eventLink: "https://forms.gle/m1KqqKrXWN8GFgY99"
   };
 
@@ -511,7 +541,9 @@ function App() {
     venue: "Amphi Stage",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Prajwal Patil-9113581092",
+    contacts: [
+      { name: "Prajwal Patil", phone: "9113581092" },
+    ],
     eventLink: "https://forms.gle/dNG1N8enBGNqr6369"
   };
 
@@ -525,6 +557,7 @@ function App() {
     teamSize: "4-8",
     rules: [
       " Time Limit: 6 minutes + 2 minutes for setup.",
+      " College members are only allowed . Outsiders are strictly prohibited. ",
       " Only acoustic instruments are allowed.",
       " Drums are not permitted.",
       " If using a piano, it must be set to Grand Piano mode only.",
@@ -534,7 +567,9 @@ function App() {
       " Only the assigned code names of participants must be announced.",
       " Any form of vulgarity or profanity will not be tolerated.",
       " Technical requirements must be informed to the coordinators beforehand.",
-      " The decision of the Judges and Event Coordinators is final."
+      " The decision of the Judges and Event Coordinators is final.",
+      "Participants cannot team up with other college students.If so the points will not be added to the General Championship tally (GC)",
+
     ],
     rounds: [
       {
@@ -550,7 +585,9 @@ function App() {
     venue: "Apple Garden",
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Prajwal Patil-9113581092",
+    contacts: [
+      { name: "Prajwal Patil", phone: "9113581092" },
+    ],
     eventLink: "https://forms.gle/3Skbo7qATmLxKjWF8"
   };
 
@@ -578,7 +615,11 @@ function App() {
       "Vulgarity or inappropriate artwork will lead to disqualification.",
       "The decision of the judges will be final and binding."
     ],
-    contact: "Akshay Naik-9902933893",
+    contacts: [
+      { name: "Akshay Naik", phone: "9902933893" },
+      { name: "Sachin Kangralkar", phone: "7975379488" },
+      { name: "Ritesh Patil", phone: "9972482469" }
+    ],
     eventLink: "https://forms.gle/Pa8JVHPFTxdy8y3w6"
   };
 
@@ -609,7 +650,11 @@ function App() {
       " Vulgarity or inappropriate artwork will lead to disqualification.",
       " The decision of the judges will be final and binding."
     ],
-    contact: "Akshay Naik-9902933893",
+    contacts: [
+      { name: "Akshay Naik", phone: "9902933893" },
+      { name: "Sachin Kangralkar", phone: "7975379488" },
+      { name: "Ritesh Patil", phone: "9972482469" }
+    ],
     eventLink: "https://forms.gle/kKoZoGmNJtJRddxs9"
   };
 
@@ -636,7 +681,11 @@ function App() {
       " Vulgarity or inappropriate artwork will lead to disqualification.",
       " The decision of the judges will be final and binding."
     ],
-    contact: "Akshay Naik-9902933893",
+    contacts: [
+      { name: "Akshay Naik", phone: "9902933893" },
+      { name: "Sachin Kangralkar", phone: "7975379488" },
+      { name: "Ritesh Patil", phone: "9972482469" }
+    ],
     eventLink: "https://forms.gle/2MkmhWQiQYcQkr6y8"
   };
 
@@ -660,7 +709,10 @@ function App() {
       "Judging criteria: Confidence, Creativity, and Engagement.",
       "The judges' decision will be final and binding."
     ],
-    contact: "Anusha Kudachi-9449252694",
+    contacts: [
+      { name: "Anusha Kudachi", phone: "9449252694" },
+      { name: "Chandan Satwani", phone: "8310658663" },
+    ],
     eventLink: "https://forms.gle/pvRw1VyUp6Z3MkcB6"
   };
 
@@ -682,7 +734,10 @@ function App() {
       "The theme for the movie will be released a week before on our social media platforms.",
       "The organizing committee’s decision will be final."
     ],
-    contact: "Anusha Kudachi-9449252694",
+    contacts: [
+      { name: "Anusha Kudachi", phone: "9449252694" },
+      { name: "Chandan Satwani", phone: "8310658663" },
+    ],
     eventLink: "https://forms.gle/c6T222Yp9NGxrpta9"
   };
 
@@ -704,7 +759,10 @@ function App() {
       "Teams cannot use real company logos or trademarks in their ads.",
       "The judges’ decision will be final and binding."
     ],
-    contact: "Anusha Kudachi-9449252694",
+    contacts: [
+      { name: "Anusha Kudachi", phone: "9449252694" },
+      { name: "Chandan Satwani", phone: "8310658663" },
+    ],
     eventLink: "https://forms.gle/qfEr1UAUFw3Qaahm6" // Replace with actual registration link
   };
 
@@ -756,7 +814,10 @@ function App() {
     ],
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Venkatesh-8792333620",
+    contacts: [
+      { name: "Venkatesh Sheshappanavar", phone: "8792333620" },
+      { name: "Sankalp Shamanewadi", phone: "7619420427" },
+    ],
     eventLink: "https://forms.gle/eV2TjEZKDQpm1Gbu8"
   };
 
@@ -790,7 +851,10 @@ function App() {
     ],
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Venkatesh-8792333620",
+    contacts: [
+      { name: "Venkatesh Sheshappanavar", phone: "8792333620" },
+      { name: "Sankalp Shamanewadi", phone: "7619420427" },
+    ],
     eventLink: "https://forms.gle/eZ25xyDUrkQ7BJHi6"
   };
 
@@ -831,7 +895,10 @@ function App() {
     ],
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Venkatesh-8792333620",
+    contacts: [
+      { name: "Venkatesh Sheshappanavar", phone: "8792333620" },
+      { name: "Sankalp Shamanewadi", phone: "7619420427" },
+    ],
     eventLink: "https://forms.gle/7Z3sXQQ1S9pmDJdT9"
   };
 
@@ -870,7 +937,10 @@ function App() {
     ],
     registration: "Online",
     teamsPerCollege: "Unlimited",
-    contact: "Venkatesh-8792333620",
+    contacts: [
+      { name: "Venkatesh Sheshappanavar", phone: "8792333620" },
+      { name: "Sankalp Shamanewadi", phone: "7619420427" },
+    ],
     eventLink: "https://forms.gle/Mh4t6KTHnYmHbxuG8"
   };
 
@@ -899,7 +969,10 @@ function App() {
       "The judges’ decisions are final and cannot be challenged.",
       "Any additional rules will be announced at the event."
     ],
-    contact: "Mansi Patil-8317491367",
+    contacts: [
+      { name: "Mansi Patil", phone: "8317491367" },
+      { name: "Shivani Raikar", phone: "7892620830" },
+    ],
     eventLink: "https://forms.gle/6Jg3kYDJBfkHYJSN8" // Replace with actual registration link
   };
 
@@ -922,7 +995,10 @@ function App() {
       "Judging will be based on creativity and how well the theme is portrayed.",
       "The judges’ decision is final and cannot be disputed."
     ],
-    contact: "Mansi Patil-8317491367",
+    contacts: [
+      { name: "Mansi Patil", phone: "8317491367" },
+      { name: "Shivani Raikar", phone: "7892620830" },
+    ],
     eventLink: "https://forms.gle/rxofETUznTw6hfnJ6"
   };
 
@@ -944,7 +1020,10 @@ function App() {
       "The performance must be confined within the designated area.",
       "Any unforeseen situations will be handled by the judges, whose decisions are final and cannot be disputed."
     ],
-    contact: "Mansi Patil-8317491367",
+    contacts: [
+      { name: "Mansi Patil", phone: "8317491367" },
+      { name: "Shivani Raikar", phone: "7892620830" },
+    ],
     eventLink: "https://forms.gle/LXj5vgHY4eYbhqVt9"
   };
 
@@ -1001,7 +1080,12 @@ function App() {
     //   "Story",
     //   "Audio"
     // ],
-    contact: "Aryan Patil-9606739893",
+    contacts: [
+      { name: "Aryan Patil", phone: "9606739893" },
+      { name: "Avinash Chavan", phone: "9035125258" },
+      { name: "Harshvardhan Kumbhar", phone: "9172634685" },
+      { name: "Samarth Pujari", phone: "7019534038" },
+    ],
     eventLink: "https://forms.gle/peZFjTHb7kbZqxS38"
   };
 
@@ -1027,7 +1111,12 @@ function App() {
     //   "Technical Skills Displayed",
     //   "Theme Representation"
     // ],
-    contact: "Aryan Patil-9606739893",
+    contacts: [
+      { name: "Aryan Patil", phone: "9606739893" },
+      { name: "Avinash Chavan", phone: "9035125258" },
+      { name: "Harshvardhan Kumbhar", phone: "9172634685" },
+      { name: "Samarth Pujari", phone: "7019534038" },
+    ],
     eventLink: "https://forms.gle/MUmsfZm1tsAiV81D6"
   };
 
@@ -1051,7 +1140,12 @@ function App() {
     //   "Relevance to the theme",
     //   "Visual appeal"
     // ],
-    contact: "Aryan Patil-9606739893",
+    contacts: [
+      { name: "Aryan Patil", phone: "9606739893" },
+      { name: "Avinash Chavan", phone: "9035125258" },
+      { name: "Harshvardhan Kumbhar", phone: "9172634685" },
+      { name: "Samarth Pujari", phone: "7019534038" },
+    ],
     eventLink: "https://forms.gle/KSRcarTzKbxjG68P7"
   };
 
@@ -1098,7 +1192,12 @@ function App() {
     //     description: "Players must juggle a football, keeping it in the air using parts of their body other than their hands or arms."
     //   }
     // ],
-    contact: "Shreyash Kalmath-8660579723",
+    contacts: [
+      { name: "Shreyash Kalmath", phone: "8660579723" },
+      { name: "Omkar Khichadi", phone: "7975019891" },
+      { name: "Rakesh Ghasti", phone: "8050969871" },
+      { name: "Sanika Ghadi", phone: "9380029551" }
+    ],
     eventLink: "https://forms.gle/HKgupPSNZ53vS73j6"
   };
 
@@ -1122,7 +1221,10 @@ function App() {
       "Each round will test different skills, including critical thinking, endurance, and confidence.",
       "The details of each round will be disclosed during the event."
     ],
-    contact: "Prashant Uppar-8050018611",
+    contacts: [
+      { name: "Saniya Kadarbhai", phone: "9731856636" },
+      { name: "Prashant Uppar", phone: "8050018611" }
+    ],
     eventLink: "https://forms.gle/nwcbipnwkHYoB81MA"
   };
 
@@ -1150,7 +1252,11 @@ function App() {
       "The event organizers reserve the right to amend rules and make final decisions in case of disputes."
     ],
 
-    contact: "Shreyash Kalmath-8660579723",
+    contacts: [
+      { name: "Saniya Kadarbhai", phone: "9731856636" },
+      { name: "Prashant Uppar", phone: "8050018611" }
+    ],
+
     eventLink: "https://forms.gle/u2tA33e9GFQBVyvY6"
   };
 
@@ -1177,7 +1283,13 @@ function App() {
       " Negative marking will be applied if participants exceed the time limit.",
       " The decision of the judges will be final and binding."
     ],
-    contact: "Akshay Naik-9902933893",
+    contacts: [
+      { name: "Akshay Naik", phone: "9902933893" },
+      { name: "Ritesh Patil", phone: "9972482469" },
+      { name: "Sachin Kangralkar", phone: "7975379488" }
+    ],
+
+
     eventLink: "https://forms.gle/tTMH4DKgKYe6rxgi6"
   };
 
@@ -1204,7 +1316,12 @@ function App() {
       " Teams must also submit a write-up containing information about the theme, duration, number of participants, and props used.",
       " Late submissions will be disqualified."
     ],
-    contact: "Akshay Naik-9902933893",
+    contacts: [
+      { name: "Akshay Naik", phone: "9902933893" },
+      { name: "Ritesh Patil", phone: "9972482469" },
+      { name: "Sachin Kangralkar", phone: "7975379488" }
+    ],
+
     eventLink: "https://forms.gle/uttDhT6p8N9LBRg16"
   };
 
@@ -1225,7 +1342,11 @@ function App() {
       "Participants must respect the venue, staff, and other participants.",
       "Any form of cheating will result in disqualification."
     ],
-    contact: "Chetan Bharmannavar - 9731340577",
+    contacts: [
+      { name: "Chetan Bharmannavar", phone: "9731340577" },
+      { name: "Shreya Bhendigiri", phone: "7676597598" }
+    ],
+
     eventLink: "https://forms.gle/Mt2d1BsjppTMjBkZ6"
   };
 
