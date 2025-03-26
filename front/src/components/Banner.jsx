@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import Jokers from "../assets/Joker.png";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/Logo_WithKLE.png";
 import "../components/Banner.css";
 
 const Banner = () => {

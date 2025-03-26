@@ -171,6 +171,16 @@ const TechTeamPopup = () => {
                   Atharva Rasane
                 </a>
               </span>
+              <span style={{ margin: '0 10px' }}>
+                <a
+                  href="https://www.linkedin.com/in/harshavardhan-sondakar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none', color: '#66d9ef' }}
+                >
+                  Harshavardhan Sondakar
+                </a>
+              </span>
             </div>
           </div>
         </>
