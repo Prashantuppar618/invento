@@ -2,6 +2,7 @@ import React from 'react';
 import { Instagram, Mail, Phone, MapPin, Sparkles } from 'lucide-react';
 import './Footer.css';
 import Logo from '../assets/Logo.png';
+import TechTeamPopup from './TechTeamPopup';
 
 const Footer = () => {
   return (
@@ -52,6 +53,8 @@ const Footer = () => {
                   KLE Technological University's Dr. MSSCET
                 </a>
               </p>
+              
+              <img src="/logo_kle.png" alt="" />
 
               {/* Social Media */}
               <div className="social-links">
@@ -67,14 +70,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="copyright">
           © {new Date().getFullYear()} Made with ♡ by -
-          <div className="name-container">
-            <span className="name"><a href="https://www.linkedin.com/in/prashant-uppar-soft89" target="_blank" rel="noopener noreferrer">Prashant</a></span>
-            <span className="name"><a href="#" target="_blank" rel="noopener noreferrer">Pratik</a></span>
-            <span className="name"><a href="https://www.linkedin.com/in/prathmesh-k" target="_blank" rel="noopener noreferrer">Prathamesh</a></span>
-            <span className="name"><a href="#" target="_blank" rel="noopener noreferrer">Amaresh</a></span>
-            <span className="name"><a href="https://www.linkedin.com/in/umarani-bharamanaikar-478107357" target="_blank" rel="noopener noreferrer">Uma</a></span>
-            <span className="name"><a href="https://www.linkedin.com/in/sandesh-chavan-189a4928b/" target="_blank" rel="noopener noreferrer">Sandesh</a></span>
-          </div>
+          <TechTeamPopup></TechTeamPopup>
           All rights reserved.
         </div>
       </div>
