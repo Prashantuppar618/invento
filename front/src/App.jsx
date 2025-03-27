@@ -595,7 +595,7 @@ function App() {
 
   {/* Fine arts */ }
   const rangiloMatka = {
-    title: "Rangilo Matka – Where Colors Meet Clay, Creativity Takes Flight!",
+    title: "Rangilo Matka – Where Colors Meet Clay, Creativity Takes Flight! (Pot Painting)",
     description:
       "Unleash your artistic flair in this pot painting competition! Start with paper painting in Round 1 and progress to painting on clay pots in Round 2. Showcase your creativity, technique, and artistic vision in this colorful journey.",
     backgroundImage: "/rangilo_matka.webp",
@@ -625,11 +625,11 @@ function App() {
   };
 
   const chitrakarMela = {
-    title: "Chitrakar Mela – Where Every Stroke Tells a Story!",
+    title: "Chitrakar Mela – Where Every Stroke Tells a Story! (Artathon)",
     description:
       "Step into the world of colors and creativity! Chitrakar Mela is a thrilling multi-round art competition that challenges participants to bring their imagination to life. From themed paper painting to surprise challenges, this is the ultimate test of artistic skill and innovation.",
     backgroundImage: "/chitrakar_mela.webp",
-    type: "Solo",
+    type: "Duo",
     amount: 400,
     teamSize: 2,
     rules: [
@@ -660,13 +660,13 @@ function App() {
   };
 
   const jutonKaJalwa = {
-    title: "Juton Ka Jalwa – Step Into Art, Walk With Creativity!",
+    title: "Juton Ka Jalwa – Step Into Art, Walk With Creativity! (Sneakers Painting)",
     description:
       "Unleash your artistic talent on a whole new canvas—sneakers! Juton Ka Jalwa is a unique art competition where participants start with paper painting and, if selected, move on to sneaker painting. Let your creativity shine and turn sneakers into masterpieces!",
     backgroundImage: "/juton_ka_jalwa.webp",
     type: "Team",
     amount: 400,
-    teamSize: 2 - 3,
+    teamSize: 2,
     rules: [
       "Round 1: Paper Painting",
       " Participants will be given a theme on the spot.",
@@ -1084,7 +1084,7 @@ function App() {
     contacts: [
       { name: "Aryan Patil", phone: "9606739893" },
       { name: "Avinash Chavan", phone: "9035125258" },
-      { name: "Harshvardhan Kumbhar", phone: "9172634685" },
+      { name: "Harshvardhan Kumbhar", phone: "9172634865" },
       { name: "Samarth Pujari", phone: "7019534038" },
     ],
     eventLink: "https://forms.gle/peZFjTHb7kbZqxS38"
@@ -1115,7 +1115,7 @@ function App() {
     contacts: [
       { name: "Aryan Patil", phone: "9606739893" },
       { name: "Avinash Chavan", phone: "9035125258" },
-      { name: "Harshvardhan Kumbhar", phone: "9172634685" },
+      { name: "Harshvardhan Kumbhar", phone: "9172634865" },
       { name: "Samarth Pujari", phone: "7019534038" },
     ],
     eventLink: "https://forms.gle/MUmsfZm1tsAiV81D6"
@@ -1144,7 +1144,7 @@ function App() {
     contacts: [
       { name: "Aryan Patil", phone: "9606739893" },
       { name: "Avinash Chavan", phone: "9035125258" },
-      { name: "Harshvardhan Kumbhar", phone: "9172634685" },
+      { name: "Harshvardhan Kumbhar", phone: "9172634865" },
       { name: "Samarth Pujari", phone: "7019534038" },
     ],
     eventLink: "https://forms.gle/KSRcarTzKbxjG68P7"

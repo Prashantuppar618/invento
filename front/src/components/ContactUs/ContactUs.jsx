@@ -49,20 +49,22 @@ export default function ContactPage() {
       {/* Contacts Section */}
       <div className="contact-list">
         <h1 className="contact-title">
-          {title.split(" ").map((word, i) => (
-            <span key={`word-${i}`} className="rotated-word">
-              {word.split("").map((char, j) => (
-                <motion.span
-                  key={`char-${i}-${j}`}
-                  style={{ display: "inline-block" }}
-                  animate={{ rotate: [0, -10, 10, -5, 5, 0] }}
-                  transition={{ repeat: Infinity, duration: 2 }}
-                >
-                  {char}
-                </motion.span>
-              ))}
-            </span>
-          ))}
+        {title.split(" ").map((word, i, arr) => (
+          <span key={`word-${i}`} className="rotated-word">
+            {word.split("").map((char, j) => (
+              <motion.span
+                key={`char-${i}-${j}`}
+                style={{ display: "inline-block" }}
+                animate={{ rotate: [0, -10, 10, -5, 5, 0] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+              >
+                {char}
+              </motion.span>
+            ))}
+            {i < arr.length - 1 && <span>&nbsp;</span>} {/* Add space between words */}
+          </span>
+        ))}
+
         </h1>
         <div className="contact-cards">
           {contacts.map((contact, index) => (

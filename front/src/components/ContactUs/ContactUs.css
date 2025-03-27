@@ -55,6 +55,8 @@
 
 /* Contact Card */
 .contact-card {
+  display: flex;
+  flex-direction: column;
   width: 220px;
   padding: 18px;
   background: linear-gradient(135deg, #fcc100, #ffb88c, #f9f871); /* Coral Pink → Peach Orange → Sunny Yellow */
@@ -64,7 +66,9 @@
   transition: transform 0.3s, box-shadow 0.3s;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  color: #ed4548 /* Ensures readability */
+  color: #ed4548 ;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-card:hover {
