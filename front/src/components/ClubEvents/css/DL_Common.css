@@ -63,6 +63,11 @@
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
+/* Make Transfrom smoother */
+.dl-stack-container .dl-stack-card {
+    transition: transform 10s ease, background 10s ease, backdrop-filter 10s ease, box-shadow 10s ease;
+}
+
 /* Active card effect: Tapped card stays up until another is tapped */
 .dl-stack-container .dl-stack-card.active {
     background: rgba(255, 255, 255, 0.2);

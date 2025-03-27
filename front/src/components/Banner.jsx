@@ -21,7 +21,7 @@ const Banner = () => {
       <div className="content">
         <div className="logoInv">
           <video autoPlay loop muted className="vidBack">
-            <source src="src\assets\CarnivalBack2.mp4" type="video/mp4" />
+            <source src="/CarnivalBack2.mp4" type="video/mp4" />
           </video>
           <img src={Logo} className="logoImg" alt="Invento_Logo" />
         </div>

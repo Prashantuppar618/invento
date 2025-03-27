@@ -35,6 +35,20 @@ const Footer = () => {
               </p>
               <p className="contact-item">
                 <Phone size={16} />
+                Sakshi Juvekar
+                <a href="tel:+918296092238" style={{ color: 'inherit', textDecoration: 'none', marginLeft: '8px' }}>
+                  +91 8296092238
+                </a>
+              </p>
+              <p className="footer-contact-item">
+                <Phone size={16} />
+                Harshvardhan Kumbhar
+                <a href="tel:+919172634865" style={{ color: 'inherit', textDecoration: 'none', marginLeft: '8px' }}>
+                  +91 8317491367
+                </a>
+              </p>
+              <p className="contact-item">
+                <Phone size={16} />
                 Avinash Chavan
                 <a href="tel:+919035125258" style={{ color: 'inherit', textDecoration: 'none', marginLeft: '8px' }}>
                   +91 9035125258
@@ -54,7 +68,7 @@ const Footer = () => {
                 </a>
               </p>
               
-              <img src="/logo_kle.png" alt="" />
+              <img className='KLElogo' src="/logo_kle.png" alt="" />
 
               {/* Social Media */}
               <div className="social-links">

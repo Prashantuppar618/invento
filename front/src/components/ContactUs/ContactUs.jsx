@@ -8,8 +8,6 @@ const contacts = [
   { name: "Sakshi Juvekar", phone: "+91 82960 92238" },
   { name: "Harshvardhan Kumbhar", phone: "+91 91726 34865" },
   { name: "Avinash Chavan", phone: "+91 90351 25258" },
-  { name: "Sakshi Patil", phone: "6366481409" },
-  { name: "Anusha Kudachi", phone: "9449252694" },
 ];
 
 const ContactCard = ({ contact }) => {

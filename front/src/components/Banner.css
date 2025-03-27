@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 
 @keyframes float {
@@ -71,7 +76,7 @@
 }
 
 .theme {
-  font-family: "Rochester", cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .curtain-container {
@@ -225,7 +230,7 @@
 
   .logoImg {
     width: 50%;
-    margin-left: 25rem;
+    margin-left: 27rem;
   }
 
   .content {

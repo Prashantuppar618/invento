@@ -3,7 +3,8 @@
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
+  width: 100vw;
 }
 
 .footer-container {
@@ -104,4 +105,19 @@
   text-decoration: underline;
   color: #c084fc;
   /* Light purple on hover */
+}
+
+.KLElogo {
+  width: 30vw;       /* Responsive width based on screen size */
+  max-width: 400px;  /* Caps it on larger screens */
+  min-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  align-self: center;
+}
+
+.KLElogo:hover {
+  transform: scale(1.05);
+  filter: brightness(1.3);
 }
