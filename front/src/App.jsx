@@ -5,6 +5,7 @@ import Card3DRotation from './components/Cards3d';
 import Navbar from './components/Navbar';
 import Ballpit from './components/Ballpit';
 import Loading from "./components/Loading.jsx"
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 // Import assets
 import MediaImg from './assets/Media_2.jpg';
@@ -1353,6 +1354,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         {/* Home Page */}
         <Route path="/" element={

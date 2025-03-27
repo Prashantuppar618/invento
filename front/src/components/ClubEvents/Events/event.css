@@ -509,7 +509,7 @@
 }
 
 .more-text.show {
-    max-height: 850px;
+    max-height: none;
     opacity: 1;
     transform: translateY(0);
 }
