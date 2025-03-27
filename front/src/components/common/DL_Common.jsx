@@ -20,6 +20,7 @@ const DL_Common = ({ eventLinks, Club }) => {
       setActiveCard(image);
     }
   };
+  
 
   // Optional: Reset active card if the user clicks outside the container
   useEffect(() => {
@@ -68,7 +69,7 @@ const DL_Common = ({ eventLinks, Club }) => {
           <button 
             style={{
               padding: "10px 20px",
-              fontSize: "16px",
+              fontSize: "24px",
               border: "none",
               backgroundColor: "#3498db",
               color: "#fff",

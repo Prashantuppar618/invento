@@ -73,9 +73,13 @@
 }
 
 /* Neon Glow Effect */
-.dl-stack-container .dl-stack-card:hover {
+/* the gliching is probbably caused by the chnage in size of the div */
+.dl-stack-card:hover {
     background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 204, 255, 0.6);
+    /* box-shadow: 0 0 15px rgba(0, 204, 255, 0.6); */
+    border-color:  rgba(0, 204, 255, 0.6);
+    /* border-radius: 20px; */
+    /* box-shadow: 0 100px 100px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 204, 255, 0.6); */
 }
 
 /* Floating Effect */
@@ -124,6 +128,18 @@
     left: 50%;
     transform: translateX(-50%);
     animation: fadeIn 1s ease-in-out;
+}
+
+.dl-back-button-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 80px;
+    width:100vw;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
