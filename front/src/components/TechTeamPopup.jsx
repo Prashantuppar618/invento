@@ -49,11 +49,13 @@ const TechTeamPopup = () => {
               padding: '20px',
               zIndex: 1000,
               boxShadow: '0 2px 10px rgba(0,0,0,0.5)',
-              width: '80%',
+              width: '90%',
               maxWidth: '500px',
               fontFamily: 'monospace',
               borderRadius: '8px',
               color: '#f8f8f2',
+              overflowY: 'auto',
+              maxHeight: '90vh',
             }}
           >
             {/* Close Button */}
@@ -85,8 +87,16 @@ const TechTeamPopup = () => {
             >
               Tech Team
             </h2>
-            <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-              <span style={{ margin: '0 10px' }}>
+            <div
+              style={{
+                textAlign: 'center',
+                marginBottom: '20px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+              }}
+            >
+              <span style={{ margin: '10px' }}>
                 <a
                   href="https://www.linkedin.com/in/prashant-uppar-soft89"
                   target="_blank"
@@ -96,7 +106,7 @@ const TechTeamPopup = () => {
                   Prashant
                 </a>
               </span>
-              <span style={{ margin: '0 10px' }}>
+              <span style={{ margin: '10px' }}>
                 <a
                   href="#"
                   target="_blank"
@@ -106,7 +116,7 @@ const TechTeamPopup = () => {
                   Pratik
                 </a>
               </span>
-              <span style={{ margin: '0 10px' }}>
+              <span style={{ margin: '10px' }}>
                 <a
                   href="https://www.linkedin.com/in/prathmesh-k"
                   target="_blank"
@@ -116,7 +126,7 @@ const TechTeamPopup = () => {
                   Prathamesh
                 </a>
               </span>
-              <span style={{ margin: '0 10px' }}>
+              <span style={{ margin: '10px' }}>
                 <a
                   href="#"
                   target="_blank"
@@ -126,7 +136,7 @@ const TechTeamPopup = () => {
                   Amaresh
                 </a>
               </span>
-              <span style={{ margin: '0 10px' }}>
+              <span style={{ margin: '10px' }}>
                 <a
                   href="https://www.linkedin.com/in/umarani-bharamanaikar-478107357"
                   target="_blank"
@@ -136,7 +146,7 @@ const TechTeamPopup = () => {
                   Uma
                 </a>
               </span>
-              <span style={{ margin: '0 10px' }}>
+              <span style={{ margin: '10px' }}>
                 <a
                   href="https://www.linkedin.com/in/sandesh-chavan-189a4928b/"
                   target="_blank"
@@ -160,8 +170,15 @@ const TechTeamPopup = () => {
             >
               Consulted
             </h3>
-            <div style={{ textAlign: 'center' }}>
-              <span style={{ margin: '0 10px' }}>
+            <div
+              style={{
+                textAlign: 'center',
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+              }}
+            >
+              <span style={{ margin: '10px' }}>
                 <a
                   href="https://in.linkedin.com/in/atharva-rasane"
                   target="_blank"
@@ -171,7 +188,7 @@ const TechTeamPopup = () => {
                   Atharva Rasane
                 </a>
               </span>
-              <span style={{ margin: '0 10px' }}>
+              <span style={{ margin: '10px' }}>
                 <a
                   href="https://www.linkedin.com/in/harshavardhan-sondakar"
                   target="_blank"

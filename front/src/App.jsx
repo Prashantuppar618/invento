@@ -1274,6 +1274,7 @@ function App() {
     amount: 200,
     teamSize: 1,
     rules: [
+      " Elimination Round will be conducted closed doors in Mask hall (3rd April, 12pm to 1pm).",
       'The theme for the event is "Circus Spectacle".',
       " Theme Description: Participants must take inspiration from the dazzling world of the circus, incorporating elements of ringmasters, acrobats, clowns, and trapeze artists into their high-fashion looks.",
       " Bold stripes, ruffles, dramatic silhouettes, and playful accessories are encouraged.",
@@ -1312,9 +1313,9 @@ function App() {
       " An additional 2 minutes are allowed for setup. Negative marking if exceeded.",
       " The decision of the judges will be final and binding.",
       "Elimination Round (For Group Fashion Show):",
-      " The Elimination Round will be conducted online.",
-      " Teams must submit a video of their entire sequence (with costumes and props) to the event coordinators on/before 26th March.",
-      " Teams must also submit a write-up containing information about the theme, duration, number of participants, and props used.",
+      " Elimination Round will be conducted in closed doors.",
+      " In Mask hall on 3rd April 12 pm to 1pm.(Day 0)",
+      "  Teams must also submit a write-up containing information about the theme, duration, number of participants, and props used.",
       " Late submissions will be disqualified."
     ],
     contacts: [
