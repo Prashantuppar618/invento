@@ -44,7 +44,7 @@ const Footer = () => {
                 <Phone size={16} />
                 Harshvardhan Kumbhar
                 <a href="tel:+919172634865" style={{ color: 'inherit', textDecoration: 'none', marginLeft: '8px' }}>
-                  +91 8317491367
+                  +91 9172634865
                 </a>
               </p>
               <p className="contact-item">

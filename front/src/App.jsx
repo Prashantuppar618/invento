@@ -726,14 +726,14 @@ function App() {
     amount: 300,
     teamSize: 2,
     rules: [
-      "The short film should not exceed 6 minutes in duration including titles and credits.",
-      "Films should not have been previously published in any media.",
-      "The video must be in MP4 or avi format.",
-      "Include a short synopsis for the entry.",
-      "Entries in other languages must have English subtitles.",
-      "The registered teams will have to submit their work on google drive link which will be provided on the WhatsApp group before the given deadline.",
-      "The theme for the movie will be released a week before on our social media platforms.",
-      "The organizing committee’s decision will be final."
+      "Participants are expected to report to the venue 10 minutes before the stated commencement time.",
+      "Participants will have to pick a chit and initiate the topic that they have received.",
+      "The topic will be disclosed to the debaters on the spot.",
+      "The Debaters shall be asked to irrevocably switch their stances at any given instant.",
+      "The debaters are allowed to counter the statements in an appropriate manner.",
+      "Use of any abusive or unparliamentary words or slangs shall lead to the immediate disqualification.",
+      "The best 6 teams will be into the final round.",
+      "The decision of the judges and jury will be final and non disputable."     
     ],
     contacts: [
       { name: "Anusha Kudachi", phone: "9449252694" },
